@@ -390,14 +390,18 @@ h6 {
   .navmenu {
     padding: 0;
     z-index: 9997;
+     flex-grow: 1;
+  display: flex;
+  justify-content: center;
   }
 
   .navmenu ul {
-    display: none;
+     display: flex;
+     gap: 25px; 
     list-style: none;
     position: absolute;
     inset: 60px 20px 20px 20px;
-    padding: 10px 0;
+    padding: 0;
     margin: 0;
     border-radius: 6px;
     background-color: var(--nav-mobile-background-color);
@@ -501,6 +505,34 @@ h6 {
   .mobile-nav-active .navmenu>ul {
     display: block;
   }
+}
+
+
+/* Watch Live button inside navbar */
+/* Watch Live button inside navbar */
+/* Watch Live button inside navbar */
+.navmenu .btn-convocation {
+  padding: 8px 22px;
+  border-radius: 50px;
+  font-weight: 600;
+  background-color: transparent;          /* transparent background */
+  color: #d4af37;                         /* gold text */
+  border: 2px solid #d4af37;              /* visible gold border */
+  transition: all 0.3s ease;
+  margin-left: auto;                      /* push to far right */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.navmenu .btn-convocation:hover {
+  background-color: #d4af37;              /* gold fill on hover */
+  color: #0b1c3d;                         /* deep blue text on hover */
+  transform: translateY(-3px);
+}
+
+
+.btn-convocation {
+  margin-left: 20px;
 }
 
 /*--------------------------------------------------------------
