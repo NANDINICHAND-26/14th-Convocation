@@ -1,214 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Convocation Song</title>
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>News - NiceSchool Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+      /* Gold gradient background with shimmer */
+      #convo-song {
+        position: relative;
+        background: linear-gradient(135deg, #f0d98a 0%, #d4af37 100%);
+        overflow: hidden;
+        padding: 60px 0;
+      }
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+      #convo-song::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -50%;
+        width: 200%;
+        height: 100%;
+        background: linear-gradient(
+          120deg,
+          rgba(255, 255, 255, 0.15) 0%,
+          rgba(255, 255, 255, 0.6) 20%,
+          rgba(255, 255, 255, 0.15) 40%
+        );
+        transform: skewX(-20deg);
+        animation: shimmer 6s infinite linear;
+        pointer-events: none;
+      }
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+      @keyframes shimmer {
+        0% {
+          transform: translateX(-100%) skewX(-20deg);
+        }
+        100% {
+          transform: translateX(100%) skewX(-20deg);
+        }
+      }
 
-  <!-- =======================================================
-  * Template Name: NiceSchool
-  * Template URL: https://bootstrapmade.com/nice-school-bootstrap-education-template/
-  * Updated: May 10 2025 with Bootstrap v5.3.6
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
+      /* Card styling */
+      .song-card {
+        max-width: 350px;
+        background-color: #0d1b2a;
+        color: white;
+        border-radius: 1.25rem;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+        padding: 1.5rem;
+        text-align: center;
+        position: relative;
+        z-index: 1; /* keeps card above shimmer */
+      }
 
-<body class="news-page">
+      .song-card img {
+        border-radius: 0.75rem;
+        margin-bottom: 1rem;
+      }
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-  <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      audio {
+        margin-top: 1rem;
+        width: 100%;
+      }
+    </style>
+  </head>
 
-    <a href="index.html" class="logo d-flex align-items-center">
-  <img src="assets/img/iiitdlogo.png"  class="img-fluid" style="height: 140px;">
-</a>
+  <body class="news-page">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div
+        class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img
+            src="assets/img/iiitdlogo.png"
+            class="img-fluid"
+            style="height: 140px"
+          />
+        </a>
 
-    <nav id="navmenu" class="navmenu d-flex align-items-center">
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="Schedule.html">Schedule</a></li>
-        <li><a href="Guidelines.html">Guidelines</a></li>
-        <li><a href="DressCode.html">Dress Code</a></li>
-        <li><a href="StudentCorner.html">Student Corner</a></li>
-        <li><a href="stories.html">Stories</a></li>
-        <li><a href="ConvoSong.html">Convo Song</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="brochure.html">Brochure</a></li>
-      </ul>
-
-      <!-- ✅ Watch Live CTA Button -->
-      <a href="#" class="btn-convocation ms-3">Watch Live</a>
-
-      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-    </nav>
-
-  </div>
-</header>
-
-
-
-<main class="main">
-
-  <!-- Page Title -->
-  <div class="page-title dark-background" style="background-image: url(assets/img/education/showcase-1.webp);">
-    <div class="container position-relative text-center">
-      <h1>Convocation Song</h1>
-      <p>Special song for the 13th Convocation</p>
-    </div>
-  </div>
-  <!-- End Page Title -->
-
-  <!-- Convocation Song Section -->
-  <section id="convo-song" class="section py-5" style="background-color:#1769aa;">
-    <div class="container d-flex flex-column align-items-center justify-content-center" data-aos="fade-up">
-
-      
-
-      <div class="card shadow-lg rounded-4 text-center p-4" style="max-width: 350px; background-color:#0d1b2a; color:white;">
-        <h6 class="mb-3">Woh Din from Chhichhore</h6>
-
-        <img src="assets/img/go.png" alt="Convocation Song" class="img-fluid rounded mb-3">
-
-        <h5 class="fw-bold">13th Convocation</h5>
-        <p class="text-muted">2024</p>
-
-        <!-- Audio Player -->
-        <audio controls class="w-100 mt-3">
-          <source src="assets/audio/woh-din.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
-
+        <nav id="navmenu" class="navmenu d-flex align-items-center">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="Schedule.html">Schedule</a></li>
+            <li><a href="Guidelines.html">Guidelines</a></li>
+            <li><a href="DressCode.html">Dress Code</a></li>
+            <li><a href="StudentCorner.html">Student Corner</a></li>
+            <li><a href="stories.html">Stories</a></li>
+            <li><a href="ConvoSong.html">Convo Song</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="brochure.html">Brochure</a></li>
+          </ul>
+          <a href="#" class="btn-convocation ms-3">Watch Live</a>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
       </div>
-    </div>
-  </section>
-  <!-- /Convocation Song Section -->
+    </header>
 
-</main>
+    <main class="main">
+      <!-- Page Title (remains unchanged) -->
+      <div
+        class="page-title dark-background"
+        style="background-image: url(assets/img/education/showcase-1.webp)"
+      >
+        <div class="container position-relative text-center">
+          <h1>Convocation Song</h1>
+          <p>Special song for the 14th Convocation</p>
+        </div>
+      </div>
+      <!-- End Page Title -->
 
+      <!-- Convocation Song Section -->
+      <section id="convo-song">
+        <div
+          class="container d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="song-card">
+            <h6 class="mb-3">Woh Din from Chhichhore</h6>
 
-  <footer id="footer" class="footer position-relative dark-background">
+            <img
+              src="assets/img/go.png"
+              alt="Convocation Song"
+              class="img-fluid"
+            />
 
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">NiceSchool</span>
-          </a>
-          <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+            <h5 class="fw-bold">14th Convocation</h5>
+            <p class="text-muted">2025</p>
+
+            <!-- Audio Player -->
+            <audio controls>
+              <source src="assets/audio/woh-din.mp3" type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
           </div>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
         </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Hic solutasetp</h4>
-          <ul>
-            <li><a href="#">Molestiae accusamus iure</a></li>
-            <li><a href="#">Excepturi dignissimos</a></li>
-            <li><a href="#">Suscipit distinctio</a></li>
-            <li><a href="#">Dilecta</a></li>
-            <li><a href="#">Sit quas consectetur</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Nobis illum</h4>
-          <ul>
-            <li><a href="#">Ipsam</a></li>
-            <li><a href="#">Laudantium dolorum</a></li>
-            <li><a href="#">Dinera</a></li>
-            <li><a href="#">Trodelas</a></li>
-            <li><a href="#">Flexo</a></li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">MyWebsite</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+      </section>
+      <!-- /Convocation Song Section -->
+    </main>
+  </body>
 </html>
