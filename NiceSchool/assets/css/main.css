@@ -7512,27 +7512,27 @@ section,
   position: relative;
   height: 80px;
 } */
- .notable-alumni .alumni-profile .profile-header {
-  height: 50%;                 /* image area = 50% of the card */
-  position: relative;          /* keep the year badge positioning working */
+.notable-alumni .alumni-profile .profile-header {
+  height: 220px;       /* fixed image area */
   width: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 .notable-alumni .alumni-profile .profile-header .profile-img {
-  height: 120px; /* fixed height */
+  width: 100%;
+  height: 100%;
   overflow: hidden;
-  max-height: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-
 .notable-alumni .alumni-profile .profile-header .profile-img img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  transition: all 0.5s ease;
-} */
+  object-fit: cover;          /* fills container, crops sides if needed */
+  object-position: top center; /* keeps face/head in view */
+  display: block;
+  transition: transform 0.5s ease;
+}
+
 /* make the image container fill the header */
 .notable-alumni .alumni-profile .profile-header .profile-img {
   width: 100%;
