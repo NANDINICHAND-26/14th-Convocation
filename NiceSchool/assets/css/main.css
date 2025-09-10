@@ -158,10 +158,10 @@ h6 {
 
 .header .logo {
   line-height: 1;
-    display: flex;
+  display: flex;
   align-items: center;
-  gap: 6px;             /* space between icon and text */
-  margin-left: -20px;     /* force no extra left space */
+  gap: 6px; /* space between icon and text */
+  margin-left: -20px; /* force no extra left space */
 }
 
 .header .logo img {
@@ -173,7 +173,7 @@ h6 {
 .header .logo i {
   font-size: 28px;
   margin-right: 6px;
-  color: #f7c948; 
+  color: #f7c948;
 }
 
 .header .logo h1 {
@@ -187,13 +187,13 @@ h6 {
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
 }
 .header .container-xl {
-  padding-left: 10px;   /* default is ~15–20px, reduce it */
+  padding-left: 10px; /* default is ~15–20px, reduce it */
 }
 
 .header .sitename {
   font-size: 24px;
   font-weight: bold;
-  color: #FFD700;       /* golden yellow */
+  color: #ffd700; /* golden yellow */
   margin: 0;
 }
 
@@ -412,14 +412,14 @@ h6 {
   .navmenu {
     padding: 0;
     z-index: 9997;
-     flex-grow: 1;
-  display: flex;
-  justify-content: center;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
   }
 
   .navmenu ul {
-     display: flex;
-     gap: 25px; 
+    display: flex;
+    gap: 25px;
     list-style: none;
     position: absolute;
     inset: 60px 20px 20px 20px;
@@ -529,7 +529,6 @@ h6 {
   }
 }
 
-
 /* Watch Live button inside navbar */
 /* Watch Live button inside navbar */
 /* Watch Live button inside navbar */
@@ -537,27 +536,24 @@ h6 {
   padding: 8px 22px;
   border-radius: 50px;
   font-weight: 600;
-  background-color: transparent;          /* transparent background */
-  color: #d4af37;                         /* gold text */
-  border: 2px solid #d4af37;              /* visible gold border */
+  background-color: transparent; /* transparent background */
+  color: #d4af37; /* gold text */
+  border: 2px solid #d4af37; /* visible gold border */
   transition: all 0.3s ease;
-  margin-left: auto;                      /* push to far right */
+  margin-left: auto; /* push to far right */
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
 .navmenu .btn-convocation:hover {
-  background-color: #d4af37;              /* gold fill on hover */
-  color: #0b1c3d;                         /* deep blue text on hover */
+  background-color: #d4af37; /* gold fill on hover */
+  color: #0b1c3d; /* deep blue text on hover */
   transform: translateY(-3px);
 }
-
 
 .btn-convocation {
   margin-left: 20px;
 }
-
-
 
 /*--------------------------------------------------------------
 # Global Footer
@@ -618,7 +614,7 @@ h6 {
 }
 
 .footer h4 {
-  font-size: 16px;
+  font-size: 25px;
   font-weight: bold;
   position: relative;
   padding-bottom: 12px;
@@ -644,6 +640,7 @@ h6 {
   padding: 10px 0;
   display: flex;
   align-items: center;
+  font-size: 15px;
 }
 
 .footer .footer-links ul li:first-child {
@@ -662,6 +659,7 @@ h6 {
 
 .footer .footer-contact p {
   margin-bottom: 5px;
+  font-size: 16px;
 }
 
 .footer .copyright {
@@ -831,8 +829,6 @@ section,
 /*--------------------------------------------------------------
 # Global Section Titles
 --------------------------------------------------------------*/
-
-
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -1600,8 +1596,8 @@ section,
 }
 
 #convocation-schedule th {
-  background: #003366;  /* Dark blue */
-  color: #FFD700;       /* Golden text */
+  background: #003366; /* Dark blue */
+  color: #ffd700; /* Golden text */
   text-transform: uppercase;
 }
 
@@ -1628,7 +1624,7 @@ section,
 .testimonials .testimonial-masonry::before {
   content: "";
   position: absolute;
-  top: 0;      /* ✅ ensure it’s aligned properly */
+  top: 0; /* ✅ ensure it’s aligned properly */
   left: 0;
   width: 100%;
   height: 100%;
@@ -1644,7 +1640,7 @@ section,
   position: relative;
   z-index: 10; /* ✅ bring title above backgrounds */
   color: var(--heading-color);
-  margin-top: 60px; 
+  margin-top: 60px;
   text-align: center;
 }
 [data-aos] {
@@ -1653,7 +1649,7 @@ section,
 }
 
 #testimonials .section-title h2 {
-  font-family: 'Cinzel Decorative', serif; /* elegant serif font */
+  font-family: "Cinzel Decorative", serif; /* elegant serif font */
   color: #f0ad4e; /* gold color */
   font-size: 36px;
   font-weight: 700;
@@ -1674,7 +1670,7 @@ section,
 }
 
 #testimonials .section-title p {
-  font-family: 'Roboto', sans-serif; /* paragraph font */
+  font-family: "Roboto", sans-serif; /* paragraph font */
   color: #ffffff; /* white/light color */
   font-size: 16px;
   margin-top: 10px;
@@ -1683,7 +1679,6 @@ section,
   margin-right: auto;
   line-height: 1.6;
 }
-
 
 .testimonials .testimonial-item:nth-child(3n-1) {
   margin-top: 3rem;
@@ -7513,7 +7508,7 @@ section,
   height: 80px;
 } */
 .notable-alumni .alumni-profile .profile-header {
-  height: 220px;       /* fixed image area */
+  height: 220px; /* fixed image area */
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -7527,7 +7522,7 @@ section,
 .notable-alumni .alumni-profile .profile-header .profile-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;          /* fills container, crops sides if needed */
+  object-fit: cover; /* fills container, crops sides if needed */
   object-position: top center; /* keeps face/head in view */
   display: block;
   transition: transform 0.5s ease;
@@ -8997,12 +8992,10 @@ section,
   color: var(--contrast-color);
 }
 
-
-
 /* ------------------------------------------------try lines--------------------------------- */
 
-.notable-alumni  h2::before,
-.notable-alumni  h2::after {
+.notable-alumni h2::before,
+.notable-alumni h2::after {
   content: "";
   display: inline-block;
   width: 50px;
@@ -9012,16 +9005,7 @@ section,
   margin: 0 15px;
 }
 
-
-
-
-
-
-
-
-
 /* ------------------------------------------------try lines--------------------------------- */
-
 
 /*--------------------------------------------------------------
 # Error 404 Section
