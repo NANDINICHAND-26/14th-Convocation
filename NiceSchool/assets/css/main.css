@@ -9141,6 +9141,32 @@ section,
   color: var(--contrast-color);
 }
 
+
+
+/* ------------------------------------------------try lines--------------------------------- */
+
+.notable-alumni  h2::before,
+.notable-alumni  h2::after {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 2px;
+  background-color: #f0ad4e; /* gold color */
+  vertical-align: middle;
+  margin: 0 15px;
+}
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------try lines--------------------------------- */
+
+
 /*--------------------------------------------------------------
 # Error 404 Section
 --------------------------------------------------------------*/
