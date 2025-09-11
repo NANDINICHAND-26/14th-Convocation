@@ -2045,20 +2045,47 @@ section,
 }
 
 /*--------------------------------------------------------------
+
+# Schedule Table 
+
+--------------------------------------------------------------*/
+/* Make the table more modern */
+.table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Highlight row on hover */
+.table-hover tbody tr:hover {
+  background-color: #f1f8ff;
+  transform: scale(1.01);
+  transition: all 0.3s ease;
+}
+
+/* Hover effect on Event text */
+.table-hover tbody tr td:last-child:hover {
+  color: #d4af37;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ------------------------------------------------------------------------------ */
+
+/*--------------------------------------------------------------
 # Events Section
 --------------------------------------------------------------*/
 .events .section-title {
   margin-bottom: 3rem;
 }
 
-.events .section-title h2 {
-  font-size: 2.5rem;
+.events .section-title h1 {
+  font-size: 4rem;
   font-weight: 700;
   margin-bottom: 0.75rem;
 }
 
-.events .section-title p {
-  font-size: 1.1rem;
+.events .section-title h2 {
+  font-size: 3rem;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
