@@ -1771,11 +1771,12 @@ section,
 .testimonials .client-details h3 {
   font-size: 1.125rem;
   margin-bottom: 0.25rem;
+  color: rgb(235, 124, 20);
 }
 
 .testimonials .client-details .position {
   font-size: 0.875rem;
-  color: color-mix(in srgb, var(--heading-color), transparent 40%);
+  color: rgb(236, 97, 47);
 }
 
 @media (max-width: 1199.98px) {
