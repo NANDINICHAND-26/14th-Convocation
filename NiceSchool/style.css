@@ -1,0 +1,101 @@
+/* Full-page colors */
+:root {
+  --page-yellow: #0b1c3d; /* dark blue background */
+  --text-darkblue: white; /* default page text color */
+  --table-text: #f4b400; /* table text color */
+}
+
+/* Full-page background + global text color */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--page-yellow) !important;
+  color: var(--text-darkblue) !important;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Force most textual elements to dark blue / white */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+span,
+strong,
+em,
+small,
+label,
+button,
+input,
+textarea,
+select,
+a {
+  color: var(--text-darkblue) !important;
+}
+
+/* Links */
+a {
+  color: var(--text-darkblue) !important;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  opacity: 0.85;
+}
+
+/* Keep containers transparent so background shows through */
+.container,
+.container-fluid,
+.table-wrapper,
+.table-responsive {
+  background: transparent !important;
+}
+
+/* Table styling */
+/* Table styling */
+.custom-schedule-table {
+  width: 90%; /* optional: slightly narrower than full width */
+  margin: 80px auto; /* 30px top & bottom, centered horizontally */
+  border-collapse: collapse;
+  table-layout: fixed;
+  border: 2px solid var(--table-text); /* outer table border in golden yellow */
+}
+
+/* Table cells */
+.custom-schedule-table th,
+.custom-schedule-table td {
+  padding: 12px 14px;
+  background: var(--page-yellow) !important;
+  color: var(--table-text) !important; /* table text in golden yellow */
+  border: 1px solid var(--table-text); /* inner cell borders in golden yellow */
+  vertical-align: middle;
+  word-wrap: break-word;
+  transition: font-weight 0.2s ease;
+}
+
+/* Hover effect: make text bold */
+.custom-schedule-table tbody tr:hover td {
+  font-weight: bold;
+}
+
+/* Optional: header styling */
+.custom-schedule-table thead tr th {
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .custom-schedule-table th,
+  .custom-schedule-table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+}

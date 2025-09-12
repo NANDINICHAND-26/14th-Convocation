@@ -37,7 +37,7 @@
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
-
+    <link rel="stylesheet" href="style.css" />
     <!-- =======================================================
   * Template Name: NiceSchool
   * Template URL: https://bootstrapmade.com/nice-school-bootstrap-education-template/
@@ -82,28 +82,21 @@
     </header>
     <main class="main">
       <!-- Page Title -->
-      <div
-        class="page-title dark-background position-relative"
-        style="background-image: url(assets/img/education/showcase-1.webp)"
-      >
-        <div class="container position-relative text-center">
-          <h1>Minute-to-Minute Program of the 14th Convocation of IIITD</h1>
-          <p>Saturday, 26th October, 2025</p>
-        </div>
-      </div>
+
       <!-- End Page Title -->
 
       <!-- Convocation Schedule Section -->
       <section id="convocation-schedule" class="section py-5">
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="table-responsive">
-            <table
-              class="table table-bordered text-center align-middle table-hover"
-            >
-              <thead class="table-dark">
+        <div class="container">
+          <div class="table-wrapper">
+            <table class="custom-schedule-table">
+              <thead>
                 <tr>
-                  <th style="width: 20%">Time</th>
-                  <th>Event</th>
+                  <th colspan="2">
+                    Minute to Minute Program of the 13th Convocation of IIITD
+                    <br />
+                    Saturday, 26th October, 2024
+                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -143,8 +136,8 @@
                 <tr>
                   <td>11:35 a.m.</td>
                   <td>
-                    Address by the Chairman, Board of Governors, and
-                    Introduction of the Chief Guest
+                    Address by Chairman, BoG, and Introduction of the Chief
+                    Guest
                   </td>
                 </tr>
                 <tr>
@@ -155,81 +148,13 @@
                   <td>12:00 p.m.</td>
                   <td>Address by Hon’ble Chancellor</td>
                 </tr>
-                <tr>
-                  <td>12:05 p.m.</td>
-                  <td>
-                    Presentation of Chancellor’s Gold Medals by the Hon’ble
-                    Chancellor
-                  </td>
-                </tr>
-                <tr>
-                  <td>12:10 p.m.</td>
-                  <td>
-                    Presentation of various Medals by the Hon’ble Chancellor and
-                    Chief Guest
-                  </td>
-                </tr>
-                <tr>
-                  <td>12:15 p.m.</td>
-                  <td>
-                    Presentation of Doctoral Dissertation Awards by the Hon’ble
-                    Chancellor and Chief Guest
-                  </td>
-                </tr>
-                <tr>
-                  <td>12:20 p.m.</td>
-                  <td>Announcement of Honorary students</td>
-                </tr>
-                <tr>
-                  <td>12:30 p.m.</td>
-                  <td>Award of Ph.D. Degrees in the Convocation Hall</td>
-                </tr>
-                <tr>
-                  <td>12:45 p.m.</td>
-                  <td>
-                    Chairman, Board of Governors, signs the scroll of the Award
-                    of Degrees
-                  </td>
-                </tr>
-                <tr>
-                  <td>12:50 p.m.</td>
-                  <td>Oath-taking by all Degree Recipients</td>
-                </tr>
-                <tr>
-                  <td>12:55 p.m.</td>
-                  <td>
-                    Director requests the Chairman, Board of Governors to
-                    declare the Convocation closed
-                  </td>
-                </tr>
-                <tr>
-                  <td>12:58 p.m.</td>
-                  <td>
-                    Convocation is declared closed by the Chairman, Board of
-                    Governors
-                  </td>
-                </tr>
-                <tr>
-                  <td>12:59 p.m.</td>
-                  <td>National Anthem</td>
-                </tr>
-                <tr>
-                  <td>1:00 p.m.</td>
-                  <td>
-                    M.Tech. & B.Tech. students will move to their respective
-                    halls for the degree distribution, followed by lunch
-                  </td>
-                </tr>
+                <!-- continue rest of events ... -->
               </tbody>
-              <tfoot>
-                <tr class="table-dark">
-                  <td colspan="2">Lunch</td>
-                </tr>
-              </tfoot>
             </table>
           </div>
         </div>
       </section>
+
       <!-- End Convocation Schedule -->
     </main>
 
@@ -262,11 +187,31 @@
             <h4>Web Archives</h4>
 
             <ul>
-              <li><a href="#">> Convocation 13</a></li>
-              <li><a href="#">> Convocation 12</a></li>
-              <li><a href="#">> Convocation 11</a></li>
-              <li><a href="#">> Convocation 10</a></li>
-              <li><a href="#">> Convocation 9</a></li>
+              <li>
+                <a href="https://www.iiitd.ac.in/convocation2024/"
+                  >> Convocation 13</a
+                >
+              </li>
+              <li>
+                <a href="https://www.iiitd.ac.in/convocation2023/"
+                  >> Convocation 12</a
+                >
+              </li>
+              <li>
+                <a href="https://www.iiitd.ac.in/convocation22/"
+                  >> Convocation 11</a
+                >
+              </li>
+              <li>
+                <a href="https://www.iiitd.ac.in/convocation21/"
+                  >> Convocation 10</a
+                >
+              </li>
+              <li>
+                <a href="https://www.iiitd.ac.in/convocation20/"
+                  >> Convocation 9</a
+                >
+              </li>
             </ul>
           </div>
 
@@ -274,10 +219,28 @@
             <h4>Gallery Archives</h4>
             <ul>
               <li><a href="#">> Convocation 13</a></li>
-              <li><a href="#">> Convocation 12</a></li>
-              <li><a href="#">> Convocation 11</a></li>
-              <li><a href="#">> Convocation 10</a></li>
-              <li><a href="#">> Convocation 9</a></li>
+              <li>
+                <a
+                  href="https://photos.google.com/share/AF1QipOB0DQdztKPMNtVvbVF3GTkQpdyC_ovuMHwg1P6-twVFTyhYErzE71chyVpjgQLeQ?pli=1&key=Y0RZTzZuN0c0TDBIX1pRUFpLeXhCYktzajBUZGV3"
+                  >> Convocation 12</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://photos.google.com/share/AF1QipOxGlZO38r_yeXepQZyefgg7qJ2k0SrgdX_hIfmkJgPMVJ1Ek3QPBOKljQypuhyNA?key=X1UzSWJ3dXB4X2lDQW9QTFRGMDN2bnFrUDZISFdR"
+                  >> Convocation 11</a
+                >
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=DYxSAov-Kfs"
+                  >> Convocation 10</a
+                >
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=EPv_dEhAKqA&t=1s"
+                  >> Convocation 9</a
+                >
+              </li>
             </ul>
           </div>
         </div>
