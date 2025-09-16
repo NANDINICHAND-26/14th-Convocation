@@ -65,8 +65,11 @@ a:focus {
   margin: 80px auto; /* 30px top & bottom, centered horizontally */
   border-collapse: collapse;
   table-layout: fixed;
-  border: 2px solid var(--table-text); /* outer table border in golden yellow */
-}
+
+  overflow: hidden;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45); /* soft shadow */
+  background: rgba(11, 28, 61, 0.85); /* semi-transparent navy overlay */
+  backdrop-filter: blur(6px); /* glass effect */}
 
 /* Table cells */
 .custom-schedule-table th,
@@ -89,6 +92,7 @@ a:focus {
 .custom-schedule-table thead tr th {
   text-align: center;
   font-weight: 600;
+  
 }
 
 /* Responsive tweaks */
@@ -98,4 +102,47 @@ a:focus {
     padding: 10px;
     font-size: 14px;
   }
+}
+/* Convocation Schedule Section - Orange Gold Background */
+#convocation-schedule {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #ffb700 0%, #ff9900 50%, #ff8c00 100%);
+}
+
+/* Subtle animated shimmer/light streaks */
+#convocation-schedule::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.15) 20%,
+    rgba(255, 255, 255, 0.05) 40%
+  );
+  transform: skewX(-20deg);
+  animation: shimmer 10s infinite linear;
+  pointer-events: none;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%) skewX(-20deg);
+  }
+  100% {
+    transform: translateX(100%) skewX(-20deg);
+  }
+}
+
+/* Subtle glowing wrapper behind the table */
+#convocation-schedule .table-wrapper {
+  position: relative;
+  z-index: 1; /* keep it above shimmer */
+  padding: 12px;
+  border-radius: 16px;
+  background: rgba(255, 140, 0, 0.15); /* semi-transparent orange-gold glow */
 }
