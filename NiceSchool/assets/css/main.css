@@ -22,7 +22,9 @@
 
 /* Global Colors */
 :root {
-  --background-color: #93bad9ff; /* Dark blue background for the website */
+  /* --background-image: url("../img/mandalaback.png"); */
+  --background-color: #93bad9ff;
+  /* Dark blue background for the website */
   --default-color: #ffffff; /* Make default text white for contrast */
   --heading-color: #d4af37; /* Golden headings */
   --accent-color: #e07a26; /* Orange for buttons, highlights, hover */
@@ -67,6 +69,7 @@ body {
   color: var(--default-color);
   /* background-color: #93bad9ff; */
   background-image: url("../img/mandalaback.png");
+  background-position: center top; /* center horizontally, top vertically */
   font-family: var(--default-font);
 }
 
