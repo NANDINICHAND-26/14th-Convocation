@@ -1373,10 +1373,17 @@ section,
   height: 100%;
   backface-visibility: hidden;
   border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   padding: 2rem;
   text-align: center;
-  background-color: var(--surface-color);
+
+  /* Tree + purple gradient overlay */
+  background-image: linear-gradient(135deg, #964894aa, #582d7caa),
+    /* gradient tint */ url("../img/tree.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply; /* blends tree with gradient */
 }
 
 /* Front side */
@@ -1395,10 +1402,12 @@ section,
   justify-content: center;
   color: #2c3e50;
 }
+
 .flip-card-back p {
   font-size: 0.95rem;
   line-height: 1.6;
 }
+
 /* ------------------------flip end-------------------- */
 
 /*--------------------------------------------------------------
