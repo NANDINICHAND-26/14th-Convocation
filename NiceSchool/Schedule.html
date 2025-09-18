@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Students Life - NiceSchool Bootstrap Template</title>
+    <title>Schedule</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
 
@@ -157,7 +157,15 @@
 
       <!-- End Convocation Schedule -->
     </main>
-
+    <style>
+      /* Make time column narrower */
+      .custom-schedule-table td:first-child,
+      .custom-schedule-table th:first-child {
+        width: 120px; /* adjust as needed (try 100px or 80px) */
+        white-space: nowrap; /* prevents time from wrapping */
+        text-align: center; /* keeps times neatly aligned */
+      }
+    </style>
     <!-- Footer -->
     <footer id="footer" class="footer position-relative dark-background">
       <div class="container footer-top">

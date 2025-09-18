@@ -1,6 +1,6 @@
 /* Full-page colors */
 :root {
-  --page-yellow: #0b1c3d; /* dark blue background */
+  --page-yellow: #13123aff; /* dark blue background */
   --text-darkblue: white; /* default page text color */
   --table-text: #f4b400; /* table text color */
 }
@@ -68,8 +68,9 @@ a:focus {
 
   overflow: hidden;
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45); /* soft shadow */
-  background: rgba(11, 28, 61, 0.85); /* semi-transparent navy overlay */
-  backdrop-filter: blur(6px); /* glass effect */}
+
+  backdrop-filter: blur(6px); /* glass effect */
+}
 
 /* Table cells */
 .custom-schedule-table th,
@@ -92,7 +93,6 @@ a:focus {
 .custom-schedule-table thead tr th {
   text-align: center;
   font-weight: 600;
-  
 }
 
 /* Responsive tweaks */
@@ -107,7 +107,12 @@ a:focus {
 #convocation-schedule {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #ffb700 0%, #ff9900 50%, #ff8c00 100%);
+  background: linear-gradient(
+    160deg,
+    #13123aff 10%,
+    #582d7cff 40%,
+    #964894ff 100%
+  );
 }
 
 /* Subtle animated shimmer/light streaks */
