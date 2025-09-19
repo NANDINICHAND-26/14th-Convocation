@@ -1053,11 +1053,16 @@ section,
 }
 
 .hero .event-ticker {
-  background-color: #26265cff;
+  /* Remove solid color */
+  /* background-color: rgb(92, 158, 202); */
+
+  /* Add image background */
+  background: url("../img/mandala2.jpg") repeat-x center center;
+  background-size: auto 100%; /* image fits vertically, repeats horizontally */
+
   padding: 25px 0;
   color: var(--contrast-color);
 }
-
 .hero .event-ticker .ticker-item {
   display: flex;
   align-items: center;
@@ -1125,76 +1130,94 @@ section,
 # About Section
 --------------------------------------------------------------*/
 
+/* Speaker Card */
 .speaker-card {
-  background: #fff;
-  border-radius: 15px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+ background: linear-gradient(135deg, #58A3CF, #393B76);
+   border-radius: 18px;
+box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   text-align: center;
-  padding: 20px 15px;
+  padding: 25px 20px;
   transition: all 0.3s ease;
   height: 100%;
+  position: relative;
+  color: #fff; /* default text white */
 }
 
+/* Hover Effect */
 .speaker-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
 }
 
+/* Speaker Image Wrapper */
 .speaker-card .speaker-image {
-  background: linear-gradient(135deg, #00b4db, #0083b0);
-  border-radius: 12px;
-  padding: 10px;
-  margin-bottom: 15px;
+  border-radius: 14px;
+  padding: 8px;
+  margin-bottom: 18px;
+ background: linear-gradient(135deg, #582D7C, #476CB0);  position: relative;
+  overflow: hidden;
 }
 
+/* Add Glow Effect on Hover */
+.speaker-card:hover .speaker-image {
+  box-shadow: 0 0 18px rgba(160, 207, 225, 0.7); /* Soft Sky Blue Glow */
+}
+
+/* Speaker Image */
 .speaker-card .speaker-image img {
   width: 100%;
   height: auto;
   border-radius: 12px;
+  position: relative;
+  z-index: 2;
 }
 
+/* Speaker Name */
 .speaker-info h5 {
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 700;
-  color: #000;
-  margin-bottom: 5px;
+  color: #A0CFE1; /* Light Blue */
+  margin-bottom: 6px;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
+/* Highlight Text (Message/Role) */
 .speaker-info .highlight {
   font-size: 0.9rem;
   font-weight: 600;
-  color: #f4b400; /* Golden Yellow */
+  color: #ffffff; /* Accent Golden */
   margin: 0;
 }
 
-.speaker-image {
-  position: relative;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.speaker-image.gold-wave {
-  background: linear-gradient(135deg, #ffd700, #ff8c00); /* Gold → Orange */
-}
-
-/* Wave Overlay */
-.speaker-image.gold-wave::before {
+/* Decorative Line Below Name */
+.speaker-info h5::after {
   content: "";
-  position: absolute;
-  inset: 0;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23FFA500' fill-opacity='0.4' d='M0,160L48,144C96,128,192,96,288,106.7C384,117,480,171,576,181.3C672,192,768,160,864,133.3C960,107,1056,85,1152,96C1248,107,1344,149,1392,170.7L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z'%3E%3C/path%3E%3C/svg%3E")
-    no-repeat center/cover;
-  z-index: 1;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #964894;
+  margin: 6px auto;
+  border-radius: 2px;
 }
 
-.speaker-image img {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  height: auto;
+/* Responsive Grid */
+@media (max-width: 991px) {
+  .speaker-card {
+    margin-bottom: 20px;
+  }
 }
+
+@media (max-width: 576px) {
+  .speaker-info h5 {
+    font-size: 0.95rem;
+  }
+  .speaker-info .highlight {
+    font-size: 0.8rem;
+  }
+}
+
 
 /* ----------------------------------------------------------- */
 .about {
