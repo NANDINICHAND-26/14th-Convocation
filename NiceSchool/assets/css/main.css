@@ -1208,13 +1208,17 @@ section,
   padding-top: 60px;
   padding-bottom: 60px;
   position: relative;
-  background: radial-gradient(
-    circle at center,   /* shape aur position */
-    #964891 0%,         /* inner color */
-    #582d7c 100%        /* outer color */
-  );
   overflow: hidden;
+
+  /* Multiple background layers */
+  background: 
+    url("../img/leftsidedesign-removebg-preview.png") left center no-repeat,   /* left design */
+    url("../img/leftsidedesign-removebg-preview-RIGHT.png") right center no-repeat,  /* right design */
+    radial-gradient(circle at center, #964891 0%, #582d7c 100%);          /* main gradient */
+
+  background-size: 200px 100%, 200px 100%, cover; /* width fixed, height full */
 }
+
 
 .about::before,
 .about::after {
@@ -1226,7 +1230,7 @@ section,
   background: url("../img/leftsidedesign-transparent3.png") no-repeat center;
   background-size: cover;
   pointer-events: none;
-  z-index: 1;
+  z-index: -1;
   mix-blend-mode: multiply;   /* white parts blend ho jayenge */
   opacity: 0.9;               /* optional */
 }
