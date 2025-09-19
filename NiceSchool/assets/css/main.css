@@ -1187,7 +1187,7 @@ box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 .speaker-info .highlight {
   font-size: 0.9rem;
   font-weight: 600;
-  color: #ffffff; /* Accent Golden */
+  color: #fcfcfc; /* Accent Golden */
   margin: 0;
 }
 
@@ -1364,6 +1364,20 @@ box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
   transition: all 0.4s ease;
   backdrop-filter: blur(5px);
 }
+.flip-card-front h3 {
+  position: absolute;     /* fix at top */
+  top: 2px;              /* thoda niche from top edge */
+  left: 50%;              /* horizontally center */
+  transform: translateX(-50%);
+  
+  font-size: 1.5rem;
+  font-weight: 700;
+  z-index: 2; /* keep above overlay */
+  text-transform: uppercase;
+  text-align: center;
+  color: #e09a02;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.212);
+}
 
 .flip-card-front .card-icon i {
   font-size: 1.9rem;
@@ -1401,7 +1415,25 @@ box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* Front & Back sides */
-.flip-card-front,
+.flip-card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+
+  /* Tree background covering entire card */
+  background-image: url("../img/tree2.png"); /* adjust path */
+  background-size: cover; /* makes tree fill the whole card */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: lighten;
+}
+
+
 .flip-card-back {
   position: absolute;
   width: 100%;
@@ -1413,13 +1445,10 @@ box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
   text-align: center;
 
   /* Tree background covering entire card */
-  background-image: url("../img/tree.png"); /* adjust path */
+ background-color: #ffffff;
   background-size: cover; /* makes tree fill the whole card */
   background-position: center;
   background-repeat: no-repeat;
-
-  /* overlay for readability */
-  background-color: rgba(255, 255, 255, 0.85);
   background-blend-mode: lighten;
 }
 
