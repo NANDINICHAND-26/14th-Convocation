@@ -122,7 +122,7 @@
 
     <nav id="navmenu" class="navmenu d-flex align-items-center">
       <ul>
-        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="Schedule.html">Schedule</a></li>
         <li><a href="Guidelines.html">Guidelines</a></li>
         <li><a href="DressCode.html">Dress Code</a></li>
@@ -130,7 +130,7 @@
         <li><a href="stories.html">Stories</a></li>
         <li><a href="ConvoSong.html">Convo Song</a></li>
         <li><a href="#footer">Contact</a></li>
-        <li><a href="brochure.html">Brochure</a></li>
+        <li><a href="sample.pdf">Brochure</a></li>
       </ul>
 
       <!-- ✅ Watch Live CTA Button -->
@@ -1511,6 +1511,26 @@
 
         <!-- Main JS File -->
         <script src="assets/js/main.js"></script>
+        <script>
+  document.addEventListener("DOMContentLoaded", function () {
+  let links = document.querySelectorAll("#navmenu a");
+  let currentPage = window.location.pathname.split("/").pop().toLowerCase(); // convert to lowercase
+
+  links.forEach(link => {
+    let linkHref = link.getAttribute("href").toLowerCase(); // lowercase for comparison
+
+    // Skip links that are only hashes (#)
+    if(linkHref.startsWith("#")) return;
+
+    if (linkHref === currentPage) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
+});
+</script>
+
       </body>
     </html>
   </body>
