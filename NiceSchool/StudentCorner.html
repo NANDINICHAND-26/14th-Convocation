@@ -83,10 +83,7 @@
 
     <main class="main">
       <!-- Page Title -->
-      <div
-        class="page-title dark-background"
-        style="background-image: url(assets/img/education/showcase-1.webp)"
-      >
+      
         <div class="container position-relative">
           <h1>Student Corner</h1>
           <p>List of students and their thesis details</p>
@@ -97,7 +94,7 @@
             </ol>
           </nav> -->
         </div>
-      </div>
+      
       <!-- End Page Title -->
 
       <!-- Student Corner Section -->
@@ -116,120 +113,115 @@
         <div class="container" data-aos="fade-up">
           <h2 class="text-center text-white mb-4 fw-bold">STUDENT CORNER</h2>
 
-          <!-- Tabs -->
-          <ul
-            class="nav nav-pills justify-content-center mb-4"
-            id="studentTabs"
-            role="tablist"
+    <!-- Tabs -->
+    <ul
+      class="nav nav-pills justify-content-center mb-4"
+      id="studentTabs"
+      role="tablist"
+    >
+      <li class="nav-item">
+        <button
+          class="nav-link active"
+          id="phd-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#phd"
+          type="button"
+          role="tab"
+        >
+          Ph.D.
+        </button>
+      </li>
+      <li class="nav-item">
+        <button
+          class="nav-link"
+          id="mtech-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#mtech"
+          type="button"
+          role="tab"
+        >
+          M.Tech.
+        </button>
+      </li>
+      <li class="nav-item">
+        <button
+          class="nav-link"
+          id="btech-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#btech"
+          type="button"
+          role="tab"
+        >
+          B.Tech.
+        </button>
+      </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content">
+      <!-- PhD Table -->
+      <div class="tab-pane fade show active" id="phd" role="tabpanel">
+        <div class="table-responsive">
+          <table
+            class="table table-bordered table-hover table-striped align-middle"
           >
-            <li class="nav-item">
-              <button
-                class="nav-link active"
-                id="phd-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#phd"
-                type="button"
-                role="tab"
-              >
-                Ph.D.
-              </button>
-            </li>
-            <li class="nav-item">
-              <button
-                class="nav-link"
-                id="mtech-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#mtech"
-                type="button"
-                role="tab"
-              >
-                M.Tech.
-              </button>
-            </li>
-            <li class="nav-item">
-              <button
-                class="nav-link"
-                id="btech-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#btech"
-                type="button"
-                role="tab"
-              >
-                B.Tech.
-              </button>
-            </li>
-          </ul>
-
-          <!-- Tab Content -->
-          <div class="tab-content">
-            <!-- PhD Table -->
-            <div class="tab-pane fade show active" id="phd" role="tabpanel">
-              <div class="table-responsive">
-                <table
-                  class="table table-bordered table-hover table-striped align-middle text-white"
-                >
-                  <thead class="table-dark">
-                    <tr>
-                      <th>Sl. No.</th>
-                      <th>Roll No.</th>
-                      <th>Name</th>
-                      <th>Department</th>
-                      <th>Advisory</th>
-                      <th>Thesis Title</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>PhD17016</td>
-                      <td>Shivang Singhal</td>
-                      <td>CSE</td>
-                      <td>Rajiv Ratn Shah & Ponnurangam Kumaraguru</td>
-                      <td>
-                        Identify, Inspect and Intervene Multimodal Fake News
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>PhD17018</td>
-                      <td>Anubha Goel</td>
-                      <td>CSE</td>
-                      <td>Anubha Majumdar</td>
-                      <td>Deep Clustering</td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>PhD16168</td>
-                      <td>A. Sriramuthu</td>
-                      <td>CSE</td>
-                      <td>Vikram Goyal</td>
-                      <td>Algorithms for Spatial Colocation Pattern Mining</td>
-                    </tr>
-                    <!-- Add more rows here as needed -->
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-            <!-- M.Tech Table -->
-            <div class="tab-pane fade" id="mtech" role="tabpanel">
-              <p class="text-center text-white">
-                M.Tech student data coming soon.
-              </p>
-            </div>
-
-            <!-- B.Tech Table -->
-            <div class="tab-pane fade" id="btech" role="tabpanel">
-              <p class="text-center text-white">
-                B.Tech student data coming soon.
-              </p>
-            </div>
-          </div>
+            <thead>
+              <tr>
+                <th>Sl. No.</th>
+                <th>Roll No.</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Advisory</th>
+                <th>Thesis Title</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>PhD17016</td>
+                <td>Shivang Singhal</td>
+                <td>CSE</td>
+                <td>Rajiv Ratn Shah & Ponnurangam Kumaraguru</td>
+                <td>Identify, Inspect and Intervene Multimodal Fake News</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>PhD17018</td>
+                <td>Anubha Goel</td>
+                <td>CSE</td>
+                <td>Anubha Majumdar</td>
+                <td>Deep Clustering</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>PhD16168</td>
+                <td>A. Sriramuthu</td>
+                <td>CSE</td>
+                <td>Vikram Goyal</td>
+                <td>Algorithms for Spatial Colocation Pattern Mining</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-      </section>
-      <!-- /Student Corner Section -->
-    </main>
+      </div>
 
+      <!-- M.Tech Table -->
+      <div class="tab-pane fade" id="mtech" role="tabpanel">
+        <p class="text-center text-light">
+          M.Tech student data coming soon.
+        </p>
+      </div>
+
+      <!-- B.Tech Table -->
+      <div class="tab-pane fade" id="btech" role="tabpanel">
+        <p class="text-center text-light">
+          B.Tech student data coming soon.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
     <!-- Footer -->
     <footer id="footer" class="footer position-relative dark-background">
       <div class="container footer-top">

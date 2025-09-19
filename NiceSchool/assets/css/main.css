@@ -764,54 +764,67 @@ h6 {
 /*--------------------------------------------------------------
 # Global Page Titles & Breadcrumbs
 --------------------------------------------------------------*/
-.page-title {
-  color: var(--default-color);
-  background-color: var(--background-color);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 160px 0 80px 0;
-  text-align: center;
+/* Mandala Background */
+.mandala-bg {
+  background: url("assets/img/mandala-back.png") center/cover no-repeat,
+              linear-gradient(135deg, #26265cdd, #582d7cdd);
+  padding: 160px 0 100px 0;
   position: relative;
+  color: #fff;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
 }
 
-.page-title:before {
+.mandala-bg::before {
   content: "";
-  background-color: color-mix(
-    in srgb,
-    var(--background-color),
-    transparent 30%
-  );
   position: absolute;
   inset: 0;
+  background: radial-gradient(circle, transparent 60%, rgba(0,0,0,0.5));
+  z-index: 0;
 }
 
-.page-title h1 {
-  font-size: 42px;
-  font-weight: 700;
-  margin-bottom: 10px;
+.mandala-bg .container {
+  position: relative;
+  z-index: 1;
 }
 
-.page-title .breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-  font-size: 16px;
-  font-weight: 400;
+.mandala-bg h1 {
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #a2cfe4, #964894);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.page-title .breadcrumbs ol li + li {
-  padding-left: 10px;
+.mandala-bg p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #a2cfe4;
 }
 
-.page-title .breadcrumbs ol li + li::before {
-  content: "/";
-  display: inline-block;
-  padding-right: 10px;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
+/* Elegant Section */
+.elegant-section {
+  background: linear-gradient(135deg, #582d7c, #476cb0);
+  color: #fff;
+  border-radius: 16px;
+  padding: 60px 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Gradient Button */
+.btn-gradient {
+  background: linear-gradient(90deg, #964894, #476cb0);
+  border: none;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(90deg, #a2cfe4, #582d7c);
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.4);
 }
 
 /*--------------------------------------------------------------
@@ -1062,7 +1075,7 @@ section,
   /* background-color: rgb(92, 158, 202); */
 
   /* Add image background */
-  background: url("../img/mandala2.jpg") repeat-x center center;
+  background: url("../img/mandala2.png") repeat-x center center;
   background-size: auto 100%; /* image fits vertically, repeats horizontally */
 
   padding: 25px 0;
@@ -3736,9 +3749,12 @@ section,
   }
 }
 
+<<<<<<< Updated upstream
 /*--------------------------------------------------------------
 # Students Life Section
 --------------------------------------------------------------*/
+=======
+>>>>>>> Stashed changes
 
 /*--------------------------------------------------------------
 # Faculty  Staff Section
@@ -8487,8 +8503,14 @@ section,
 # Dress - code Section
 --------------------------------------------------------------*/
 #dress-code {
-  background: linear-gradient(135deg, #0b1c3d 0%, #13294b 100%);
-}
+background: url("assets/img/mandalaback.png") center/cover no-repeat;
+              
+  padding: 160px 0 100px 0;
+  position: relative;
+  color: #fff;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.6);}
+
+  
 
 #dress-code::before {
   content: "";
@@ -8521,13 +8543,17 @@ section,
   transition: all 0.4s ease;
   position: relative;
   overflow: hidden;
+  border: 6px solid; /* broader border */
+  border-image: linear-gradient(135deg, #582d7c, #476cb0) 1; /* gradient border */
+  border-radius: 16px; /* rounded edges look more elegant */
 }
 
 /* Hover zoom + glow */
 .card:hover {
   transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 0 30px rgba(255, 215, 0, 0.7);
-  border-image: linear-gradient(135deg, #ffea00, #ff8c00) 1;
+  box-shadow: 0 0 40px rgba(255, 215, 0, 0.8);
+  border: 8px solid; /* border grows a bit more on hover */
+  border-image: linear-gradient(90deg, #a2cfe4, #964894) 1;
 }
 
 .card:hover::after {
@@ -8537,11 +8563,14 @@ section,
 /* Smooth image zoom inside */
 .card img {
   transition: transform 0.5s ease;
+  border-radius: 12px; /* matches the card's rounded edges */
 }
 
 .card:hover img {
   transform: scale(1.1);
 }
+
+
 
 /*--------------------------------------------------------------
 # Dress - code Section end
@@ -8549,21 +8578,68 @@ section,
 /*--------------------------------------------------------------
 # Student Corner Section 
 --------------------------------------------------------------*/
+/* Student Corner Background */
+/* Student Corner Background with Mandala */
+.student-corner {
+  background: url("assets/img/schedulebg.jpg") center center/cover no-repeat;
+  color: #fff;
+  padding: 60px 0;
+  position: relative;
+  z-index: 1;
+}
+
+/* Overlay for readability */
+.student-corner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(38, 38, 92, 0.6); /* deep violet overlay */
+  z-index: -1;
+}
+
+/* Section Title */
+.student-corner h2 {
+  font-size: 2.2rem;
+  color: #a2cfe4;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Nav Pills (Tabs) */
+.nav-pills .nav-link {
+  color: #a2cfe4;
+  border-radius: 30px;
+  font-weight: 500;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+.nav-pills .nav-link.active {
+  background: #964894;
+  color: #fff;
+  border-color: #a2cfe4;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.nav-pills .nav-link:hover {
+  color: #fff;
+  background: #476cb0;
+}
+
 /* Elegant Table Styling */
 .table {
   border-collapse: separate;
   border-spacing: 0;
   border-radius: 12px;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.1); /* semi-transparent */
-  backdrop-filter: blur(6px); /* glassmorphism */
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  color: #fff;
 }
 
 /* Table Header */
 .table thead th {
-  background: linear-gradient(135deg, #0b1c3d, #1e3c72);
-  color: #ffd700;
+  background: linear-gradient(135deg, #26265c, #582d7c);
+  color: #a2cfe4;
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
@@ -8573,24 +8649,37 @@ section,
 }
 
 /* Table Rows */
+/* Table Rows */
 .table tbody tr {
   transition: all 0.3s ease;
 }
 
-.table tbody tr:nth-child(even) {
-  background: rgba(255, 255, 255, 0.05);
+/* Alternate row colors using nth-child */
+.table tbody tr:nth-child(3n+1) {
+  background: #964894; /* Magenta shade */
+  color: #fff;
+}
+.table tbody tr:nth-child(3n+2) {
+  background: #582d7c; /* Purple shade */
+  color: #fff;
+}
+.table tbody tr:nth-child(3n) {
+  background: #26265c; /* Deep Indigo */
+  color: #fff;
 }
 
+/* Hover effect */
 .table tbody tr:hover {
-  background: rgba(255, 215, 0, 0.2);
+  background: rgba(162, 207, 228, 0.25); /* soft highlight */
   transform: scale(1.01);
 }
+
 
 /* Table Cells */
 .table td {
   padding: 12px;
   border: none;
-  color: #000000;
+  color: #13123a;
   vertical-align: middle;
   text-align: center;
 }
@@ -8598,7 +8687,7 @@ section,
 /* Serial Number Column Highlight */
 .table td:first-child {
   font-weight: bold;
-  color: #ffd700;
+  color: #000000;
 }
 
 /* Responsive Scrollbar Styling */
@@ -8606,10 +8695,6 @@ section,
   height: 8px;
 }
 .table-responsive::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #ffd700, #ff8c00);
+  background: linear-gradient(135deg, #964894, #476cb0);
   border-radius: 10px;
 }
-
-/*--------------------------------------------------------------
-# Student Corner Section end
---------------------------------------------------------------*/
