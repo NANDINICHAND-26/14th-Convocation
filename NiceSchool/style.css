@@ -1,54 +1,18 @@
 /* Full-page colors */
 :root {
-  --page-yellow: #13123aff; /* dark blue background */
-  --text-darkblue: white; /* default page text color */
+  --page-yellow: #26265cff; /* dark blue background */
+ 
   --table-text: #f4b400; /* table text color */
 }
-
 /* Full-page background + global text color */
-html,
+
 body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: var(--page-yellow) !important;
-  color: var(--text-darkblue) !important;
-  font-family: "Poppins", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: red !important;
 }
 
-/* Force most textual elements to dark blue / white */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-li,
-span,
-strong,
-em,
-small,
-label,
-button,
-input,
-textarea,
-select,
-a {
-  color: var(--text-darkblue) !important;
-}
 
-/* Links */
-a {
-  color: var(--text-darkblue) !important;
-  text-decoration: none;
-}
-a:hover,
-a:focus {
-  opacity: 0.85;
-}
+
+
 
 /* Keep containers transparent so background shows through */
 .container,
@@ -76,7 +40,6 @@ a:focus {
 .custom-schedule-table th,
 .custom-schedule-table td {
   padding: 12px 14px;
-  background: var(--page-yellow) !important;
   color: var(--table-text) !important; /* table text in golden yellow */
   border: 1px solid var(--table-text); /* inner cell borders in golden yellow */
   vertical-align: middle;
@@ -92,7 +55,7 @@ a:focus {
 /* Optional: header styling */
 .custom-schedule-table thead tr th {
   text-align: center;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 /* Responsive tweaks */
@@ -103,20 +66,9 @@ a:focus {
     font-size: 14px;
   }
 }
-/* Convocation Schedule Section - Orange Gold Background */
-#convocation-schedule {
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(
-    160deg,
-    #13123aff 10%,
-    #582d7cff 40%,
-    #964894ff 100%
-  );
-}
 
 /* Subtle animated shimmer/light streaks */
-#convocation-schedule::before {
+/* #convocation-schedule::before {
   content: "";
   position: absolute;
   top: 0;
@@ -132,7 +84,7 @@ a:focus {
   transform: skewX(-20deg);
   animation: shimmer 10s infinite linear;
   pointer-events: none;
-}
+} */
 
 @keyframes shimmer {
   0% {
@@ -149,5 +101,4 @@ a:focus {
   z-index: 1; /* keep it above shimmer */
   padding: 12px;
   border-radius: 16px;
-  background: rgba(255, 140, 0, 0.15); /* semi-transparent orange-gold glow */
-}
+  background: rgba(255, 140, 0, 0.15); 
