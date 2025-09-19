@@ -22,9 +22,7 @@
 
 /* Global Colors */
 :root {
-  /* --background-image: url("../img/mandalaback.png"); */
-  --background-color: #93bad9ff;
-  /* Dark blue background for the website */
+  --background-color: #93bad9ff; 
   --default-color: #ffffff; /* Make default text white for contrast */
   --heading-color: #d4af37; /* Golden headings */
   --accent-color: #e07a26; /* Orange for buttons, highlights, hover */
@@ -1202,11 +1200,41 @@ section,
 .about {
   padding-top: 60px;
   padding-bottom: 60px;
+  position: relative;
+  background: radial-gradient(
+    circle at center,   /* shape aur position */
+    #964891 0%,         /* inner color */
+    #582d7c 100%        /* outer color */
+  );
+  overflow: hidden;
 }
 
-.about .display-6 {
-  line-height: 1.2;
+.about::before,
+.about::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  background: url("../img/leftsidedesign-transparent3.png") no-repeat center;
+  background-size: cover;
+  pointer-events: none;
+  z-index: 1;
+  mix-blend-mode: multiply;   /* white parts blend ho jayenge */
+  opacity: 0.9;               /* optional */
 }
+
+/* Left */
+.about::before {
+  left: 0;
+}
+
+/* Right (mirrored) */
+.about::after {
+  right: 0;
+  transform: scaleX(-1);
+}
+
 
 .about .display-6 span {
   position: relative;
@@ -1323,6 +1351,7 @@ section,
 .about .mission-vision-row {
   margin-top: 2rem;
 }
+
 
 /* -----------------------flip------------------------------- */
 .flip-card-front .card-icon {
