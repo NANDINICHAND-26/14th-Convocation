@@ -1,104 +1,88 @@
-/* Full-page colors */
-:root {
-  --page-yellow: #26265cff; /* dark blue background */
- 
-  --table-text: #f4b400; /* table text color */
-}
-/* Full-page background + global text color */
-
-body {
-  background: red !important;
-}
-
-
-
-
-
-/* Keep containers transparent so background shows through */
-.container,
-.container-fluid,
-.table-wrapper,
-.table-responsive {
-  background: transparent !important;
-}
-
-/* Table styling */
-/* Table styling */
-.custom-schedule-table {
-  width: 90%; /* optional: slightly narrower than full width */
-  margin: 80px auto; /* 30px top & bottom, centered horizontally */
-  border-collapse: collapse;
-  table-layout: fixed;
-
+/* Convocation Schedule Section */
+#convocation-schedule {
+  position: relative;
   overflow: hidden;
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45); /* soft shadow */
-
-  backdrop-filter: blur(6px); /* glass effect */
+  padding: 80px 0;
+  background: radial-gradient(circle at center, #26265c 0%, #582d7c 60%, #476cb0 100%);
 }
 
-/* Table cells */
-.custom-schedule-table th,
-.custom-schedule-table td {
-  padding: 12px 14px;
-  color: var(--table-text) !important; /* table text in golden yellow */
-  border: 1px solid var(--table-text); /* inner cell borders in golden yellow */
-  vertical-align: middle;
-  word-wrap: break-word;
-  transition: font-weight 0.2s ease;
-}
-
-/* Hover effect: make text bold */
-.custom-schedule-table tbody tr:hover td {
-  font-weight: bold;
-}
-
-/* Optional: header styling */
-.custom-schedule-table thead tr th {
-  text-align: center;
-  font-weight: 800;
-}
-
-/* Responsive tweaks */
-@media (max-width: 768px) {
-  .custom-schedule-table th,
-  .custom-schedule-table td {
-    padding: 10px;
-    font-size: 14px;
-  }
-}
-
-/* Subtle animated shimmer/light streaks */
-/* #convocation-schedule::before {
+/* Left Decorative Image */
+#convocation-schedule::before {
   content: "";
   position: absolute;
   top: 0;
-  left: -50%;
-  width: 200%;
+  left: 0;
+  width: 180px; /* adjust size */
   height: 100%;
-  background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0.05) 0%,
-    rgba(255, 255, 255, 0.15) 20%,
-    rgba(255, 255, 255, 0.05) 40%
-  );
-  transform: skewX(-20deg);
-  animation: shimmer 10s infinite linear;
-  pointer-events: none;
-} */
-
-@keyframes shimmer {
-  0% {
-    transform: translateX(-100%) skewX(-20deg);
-  }
-  100% {
-    transform: translateX(100%) skewX(-20deg);
-  }
+  background: url("assets/img/left.png") left center/contain repeat-y;
+  opacity: 0.85;
+  z-index: 0;
 }
 
-/* Subtle glowing wrapper behind the table */
+/* Right Decorative Image */
+#convocation-schedule::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 180px; /* adjust size */
+  height: 100%;
+  background: url("assets/img/right.png") right center/contain repeat-y;
+  opacity: 0.85;
+  z-index: 0;
+}
+
+/* Table wrapper */
 #convocation-schedule .table-wrapper {
   position: relative;
-  z-index: 1; /* keep it above shimmer */
-  padding: 12px;
+  z-index: 1;
+  padding: 20px;
   border-radius: 16px;
-  background: rgba(255, 140, 0, 0.15); 
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* Table Styling */
+.custom-schedule-table {
+  width: 95%;
+  margin: auto;
+  border-collapse: collapse;
+  table-layout: fixed;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Table Header */
+.custom-schedule-table thead th {
+  text-align: center;
+  padding: 16px;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #f4b400;
+  background: linear-gradient(135deg, #26265c, #582d7c);
+  border-bottom: 2px solid #f4b400;
+}
+
+/* Table Cells */
+.custom-schedule-table th,
+.custom-schedule-table td {
+  padding: 14px;
+  color: #fff;
+  border: 1px solid #f4b400;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+}
+
+/* Alternate Rows */
+.custom-schedule-table tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Hover Effect */
+.custom-schedule-table tbody tr:hover {
+  background: rgba(244, 180, 0, 0.15);
+  transform: scale(1.01);
+  font-weight: bold;
+}

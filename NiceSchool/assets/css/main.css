@@ -8502,17 +8502,31 @@ section,
 /*--------------------------------------------------------------
 # Dress - code Section
 --------------------------------------------------------------*/
-#dress-code {
-background: url("assets/img/mandalaback.png") center/cover no-repeat;
-              
-  padding: 160px 0 100px 0;
-  position: relative;
-  color: #fff;
-  text-shadow: 1px 1px 6px rgba(0,0,0,0.6);}
+/* Dress Code Section */
 
-  
+
+/* Mandala overlay */
+#dress-code {
+  background: radial-gradient(circle at center, rgba(38,38,92,0.9) 0%, rgba(88,45,124,0.8) 60%, rgba(71,108,176,0.8) 100%);
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0;
+  color: #fff;
+  text-align: center;
+}
 
 #dress-code::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("assets/img/mandalaback.png") center/cover no-repeat;
+  opacity: 0;   /* make it stronger */
+  z-index: 0;
+}
+
+
+/* Shimmer overlay */
+#dress-code::after {
   content: "";
   position: absolute;
   top: 0;
@@ -8521,13 +8535,14 @@ background: url("assets/img/mandalaback.png") center/cover no-repeat;
   height: 100%;
   background: linear-gradient(
     120deg,
-    rgba(255, 255, 255, 0.1) 0%,
-    rgba(255, 255, 255, 0.4) 20%,
-    rgba(255, 255, 255, 0.1) 40%
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.2) 20%,
+    rgba(255, 255, 255, 0.05) 40%
   );
   transform: skewX(-20deg);
-  animation: shimmer 6s infinite linear;
+  animation: shimmer 8s infinite linear;
   pointer-events: none;
+  z-index: 1;
 }
 
 @keyframes shimmer {
@@ -8539,37 +8554,45 @@ background: url("assets/img/mandalaback.png") center/cover no-repeat;
   }
 }
 
+/* Section Heading */
+#dress-code h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #a2cfe4;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  position: relative;
+  z-index: 2;
+}
+
+/* Cards */
 .card {
   transition: all 0.4s ease;
   position: relative;
   overflow: hidden;
-  border: 6px solid; /* broader border */
-  border-image: linear-gradient(135deg, #582d7c, #476cb0) 1; /* gradient border */
-  border-radius: 16px; /* rounded edges look more elegant */
+  border: 6px solid;
+  border-image: linear-gradient(135deg, #582d7c, #476cb0) 1;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.05);
+  z-index: 2;
 }
 
 /* Hover zoom + glow */
 .card:hover {
   transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 0 40px rgba(255, 215, 0, 0.8);
-  border: 8px solid; /* border grows a bit more on hover */
+  box-shadow: 0 0 40px rgba(162, 207, 228, 0.7);
+  border: 8px solid;
   border-image: linear-gradient(90deg, #a2cfe4, #964894) 1;
 }
 
-.card:hover::after {
-  opacity: 1;
-}
-
-/* Smooth image zoom inside */
+/* Smooth image zoom */
 .card img {
   transition: transform 0.5s ease;
-  border-radius: 12px; /* matches the card's rounded edges */
+  border-radius: 12px;
 }
-
 .card:hover img {
   transform: scale(1.1);
 }
-
 
 
 /*--------------------------------------------------------------
