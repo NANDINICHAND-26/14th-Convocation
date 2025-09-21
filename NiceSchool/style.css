@@ -2,33 +2,17 @@
 #convocation-schedule {
   position: relative;
   overflow: hidden;
-  padding: 80px 0;
-  background: radial-gradient(circle at center, #26265c 0%, #582d7c 60%, #476cb0 100%);
+  padding: 100px 0; /* more breathing space */
+  background: url("assets/img/mandalaback.png") center/cover no-repeat; /* mandala bg */
+  color: #fff;
 }
 
-/* Left Decorative Image */
+/* Dark overlay to make text readable */
 #convocation-schedule::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 180px; /* adjust size */
-  height: 100%;
-  background: url("assets/img/left.png") left center/contain repeat-y;
-  opacity: 0.85;
-  z-index: 0;
-}
-
-/* Right Decorative Image */
-#convocation-schedule::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 180px; /* adjust size */
-  height: 100%;
-  background: url("assets/img/right.png") right center/contain repeat-y;
-  opacity: 0.85;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* dark transparent overlay */
   z-index: 0;
 }
 
@@ -36,17 +20,18 @@
 #convocation-schedule .table-wrapper {
   position: relative;
   z-index: 1;
-  padding: 20px;
-  border-radius: 16px;
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(8px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+  padding: 30px; /* extra padding for spacing */
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.5); /* glass effect background */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.7);
+  max-width: 1100px; /* restrict width */
+  margin: auto;
 }
 
 /* Table Styling */
 .custom-schedule-table {
-  width: 95%;
-  margin: auto;
+  width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
   border-radius: 12px;
@@ -56,21 +41,21 @@
 /* Table Header */
 .custom-schedule-table thead th {
   text-align: center;
-  padding: 16px;
-  font-size: 20px;
+  padding: 20px;
+  font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #f4b400;
-  background: linear-gradient(135deg, #26265c, #582d7c);
-  border-bottom: 2px solid #f4b400;
+  color: #a2cfe4;
+  background: rgba(0, 0, 0, 0.5);
+  border-bottom: 3px solid #a2cfe4;
 }
 
 /* Table Cells */
 .custom-schedule-table th,
 .custom-schedule-table td {
-  padding: 14px;
+  padding: 16px;
   color: #fff;
-  border: 1px solid #f4b400;
+  border: 1px solid #a2cfe4;
   vertical-align: middle;
   transition: all 0.3s ease;
 }
