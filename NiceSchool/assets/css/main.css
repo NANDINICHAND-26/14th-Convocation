@@ -218,8 +218,13 @@ h6 {
 
 /* Navbar */
 .header {
+<<<<<<< HEAD
   background-color :#393b76; /* deep blue */
   border-bottom: 2px solid #d4af37; /* gold line under navbar */
+=======
+  background-color: #393b76; /* deep blue */
+  border-bottom: 2px solid #43d1f1; /* gold line under navbar */
+>>>>>>> 98e5bcc487e411b80a2d7523c21488df4314b1e8
 }
 
 .header .logo h1 {
@@ -567,15 +572,15 @@ h6 {
   background-color: var(--background-color);
   font-size: 14px;
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
 }
 .footer-building {
   position: absolute;
   bottom: 0;
   right: 0;
-  max-width: 400px;  /* adjust size as needed */
+  max-width: 400px; /* adjust size as needed */
   height: auto;
-  opacity: 0.9;      /* optional, for a softer effect */
+  opacity: 0.9; /* optional, for a softer effect */
   pointer-events: none; /* so it doesn’t block clicks on footer links */
 }
 .footer .footer-top {
@@ -773,18 +778,18 @@ h6 {
 /* Mandala Background */
 .mandala-bg {
   background: url("assets/img/mandala-back.png") center/cover no-repeat,
-              linear-gradient(135deg, #26265cdd, #582d7cdd);
+    linear-gradient(135deg, #26265cdd, #582d7cdd);
   padding: 160px 0 100px 0;
   position: relative;
   color: #fff;
-  text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
 }
 
 .mandala-bg::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle, transparent 60%, rgba(0,0,0,0.5));
+  background: radial-gradient(circle, transparent 60%, rgba(0, 0, 0, 0.5));
   z-index: 0;
 }
 
@@ -814,7 +819,7 @@ h6 {
   color: #fff;
   border-radius: 16px;
   padding: 60px 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Gradient Button */
@@ -830,7 +835,7 @@ h6 {
 .btn-gradient:hover {
   background: linear-gradient(90deg, #a2cfe4, #582d7c);
   transform: scale(1.05);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
 }
 
 /*--------------------------------------------------------------
@@ -1376,6 +1381,7 @@ section,
   margin-top: 2rem;
    margin-right: 60px;
 }
+/* ------------------------------------------------------------------------------- */
 
 /* -----------------------Elegant Flip Card v2----------------------- */
 .flip-card-front .card-icon {
@@ -1698,10 +1704,17 @@ section,
 --------------------------------------------------------------*/
 .testimonials {
   padding-top: 60px;
+<<<<<<< HEAD
   padding-bottom: 60px;
   position: relative; /* needed for background layering */
   background: url("assets/img/mandalaback.png") center center/cover no-repeat;
   /* If you want the image to repeat instead of cover, use: repeat */
+=======
+  padding-bottom: 60px; /* ✅ Background image */
+  background: url("../img/your-background.png") no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed; /* keeps it in place while scrolling */
+>>>>>>> 98e5bcc487e411b80a2d7523c21488df4314b1e8
 }
 
 
@@ -6878,6 +6891,14 @@ section,
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
+.notable-alumni h2 {
+  color: #f0ad4e; /* or any yellow shade */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.notable-alumni h4 {
+  font-weight: 540;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
 
 .alumni .alumni-engagement {
   padding: 4rem 0;
@@ -8511,10 +8532,14 @@ section,
 --------------------------------------------------------------*/
 /* Dress Code Section */
 
-
 /* Mandala overlay */
 #dress-code {
-  background: radial-gradient(circle at center, rgba(38,38,92,0.9) 0%, rgba(88,45,124,0.8) 60%, rgba(71,108,176,0.8) 100%);
+  background: radial-gradient(
+    circle at center,
+    rgba(38, 38, 92, 0.7) 0%,
+    rgba(88, 45, 124, 0.6) 60%,
+    rgba(71, 108, 176, 0.6) 100%
+  );
   position: relative;
   overflow: hidden;
   padding: 100px 0;
@@ -8527,10 +8552,9 @@ section,
   position: absolute;
   inset: 0;
   background: url("assets/img/mandalaback.png") center/cover no-repeat;
-  opacity: 0;   /* make it stronger */
+  opacity: 0; /* make it stronger */
   z-index: 0;
 }
-
 
 /* Shimmer overlay */
 #dress-code::after {
@@ -8567,7 +8591,7 @@ section,
   font-weight: 700;
   margin-bottom: 50px;
   color: #a2cfe4;
-  text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   position: relative;
   z-index: 2;
 }
@@ -8580,7 +8604,7 @@ section,
   border: 6px solid;
   border-image: linear-gradient(135deg, #582d7c, #476cb0) 1;
   border-radius: 16px;
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   z-index: 2;
 }
 
@@ -8600,7 +8624,6 @@ section,
 .card:hover img {
   transform: scale(1.1);
 }
-
 
 /*--------------------------------------------------------------
 # Dress - code Section end
@@ -8685,11 +8708,11 @@ section,
 }
 
 /* Alternate row colors using nth-child */
-.table tbody tr:nth-child(3n+1) {
+.table tbody tr:nth-child(3n + 1) {
   background: #964894; /* Magenta shade */
   color: #fff;
 }
-.table tbody tr:nth-child(3n+2) {
+.table tbody tr:nth-child(3n + 2) {
   background: #582d7c; /* Purple shade */
   color: #fff;
 }
@@ -8703,7 +8726,6 @@ section,
   background: rgba(162, 207, 228, 0.25); /* soft highlight */
   transform: scale(1.01);
 }
-
 
 /* Table Cells */
 .table td {
