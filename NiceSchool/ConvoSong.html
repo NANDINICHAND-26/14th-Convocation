@@ -26,7 +26,8 @@
     <link href="assets/css/main.css" rel="stylesheet" />
 
     <style>
-   /* Section Background */
+
+/* Section Background */
 #convo-song {
   position: relative;
   background: url("../img/mandala back.png") center/cover no-repeat;
@@ -47,53 +48,37 @@
 
 /* Song Card */
 .song-card {
-  max-width: 500px;            /* broader card */
+  max-width: 500px;                  /* broader card */
   background: linear-gradient(160deg, #242555, #582d7c);
   color: #fff;
   border-radius: 1.5rem;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45);
-  padding: 2rem 3.5rem;        /* more spacious */
+  padding: 2rem 2.5rem;             /* compact padding */
   text-align: center;
   border: 2px solid #d4af37;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 auto;                    /* card itself center */
 }
 
-<<<<<<< HEAD
 .song-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
 }
+
 /* Small Heading (Song name) */
 .song-card h6 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   letter-spacing: 1px;
   font-weight: 600;
   color: #98c1d9;
   margin-bottom: 1rem;
 }
-=======
-      /* Card styling */
-      .song-card {
-        max-width: 400px;
-        /* background: linear-gradient(160deg, #1a237e 0%, #311b92 100%); */
-        background-color: #4a3b6b;
-        color: #fff;
-        border-radius: 1.25rem;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
-        padding: 2rem;
-        text-align: center;
-        position: relative;
-        z-index: 1;
-        border: 2px solid #d4af37;
-      }
->>>>>>> 98e5bcc487e411b80a2d7523c21488df4314b1e8
 
 /* Image */
 .song-card img {
-  max-width: 200px;            /* bigger circle */
-  margin: 0 auto 1.5rem;
-  display: block;
-  
+  max-width: 400px;
+  display: block;                    /* block to use auto margin */
+  margin: 0 auto 1.5rem;            /* center horizontally */
   border: 4px solid #964894;
   padding: 6px;
   background: #26265c;
@@ -125,6 +110,22 @@
   outline: none;
   background: #242555;
 }
+
+/* Convocation Button */
+.btn-convocation {
+  background: linear-gradient(45deg, #964894, #582d7c);
+  color: white;
+  padding: 0.6rem 1.4rem;
+  border-radius: 30px;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.btn-convocation:hover {
+  background: linear-gradient(45deg, #d4af37, #fbc02d);
+  color: #0b1c3d;
+}
+
 /* Convocation Button */
 .btn-convocation {
   background: linear-gradient(45deg, #964894, #582d7c);
@@ -213,10 +214,11 @@
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 footer-about">
             <a href="index.html" class="logo d-flex align-items-center">
-              <span class="sitename">Contact Info</span>
+              <span class="sitename" style="color: #d4af37; font-weight: 600; margin-bottom: 0.8rem;">Contact Info</span>
             </a>
-            <div class="footer-contact pt-3">
-              <p>IIITD, Okhla phase III, New Delhi, India</p>
+            <div class="footer-contact pt-3" >
+              <h5>IIIT-Delhi</h5>
+              <p>Okhla phase III, New Delhi, India</p>
 
               <p class="mt-3">
                 <strong>Phone:</strong> <span>011 - 71985300</span>
@@ -233,79 +235,25 @@
           </div>
 
           <div class="col-lg-4 col-md-3 footer-links">
-            <h4>Web Archives</h4>
+            <h4 style="color: #d4af37; font-weight: 600; margin-bottom: 0.8rem;">Web Archives </h4>
 
             <ul>
-<<<<<<< HEAD
               <li><a href="https://www.iiitd.ac.in/convocation2024/"><i class="fas fa-bookmark"></i>   Convocation 13</a></li>
               <li><a href="https://www.iiitd.ac.in/convocation2023/"><i class="fas fa-bookmark"></i>   Convocation 12</a></li>
               <li><a href="https://www.iiitd.ac.in/convocation22/"><i class="fas fa-bookmark"></i>   Convocation 11</a></li>
               <li><a href="https://www.iiitd.ac.in/convocation21/"><i class="fas fa-bookmark"></i>   Convocation 10</a></li>
               <li><a href="https://www.iiitd.ac.in/convocation20/"><i class="fas fa-bookmark"></i>   Convocation 9</a></li>
-=======
-              <li>
-                <a href="https://www.iiitd.ac.in/convocation2024/"
-                  >> Convocation 13</a
-                >
-              </li>
-              <li>
-                <a href="https://www.iiitd.ac.in/convocation2023/"
-                  >> Convocation 12</a
-                >
-              </li>
-              <li>
-                <a href="https://www.iiitd.ac.in/convocation22/"
-                  >> Convocation 11</a
-                >
-              </li>
-              <li>
-                <a href="https://www.iiitd.ac.in/convocation21/"
-                  >> Convocation 10</a
-                >
-              </li>
-              <li>
-                <a href="https://www.iiitd.ac.in/convocation20/"
-                  >> Convocation 9</a
-                >
-              </li>
->>>>>>> 98e5bcc487e411b80a2d7523c21488df4314b1e8
             </ul>
           </div>
 
           <div class="col-lg-4 col-md-3 footer-links">
-            <h4>Gallery Archives</h4>
+            <h4 style="color: #d4af37; font-weight: 600; margin-bottom: 0.8rem;">Gallery Archives</h4>
             <ul>
-<<<<<<< HEAD
               <li><a href="#"><i class="material-icons">camera_alt</i>  Convocation 13</a></li>
               <li><a href="https://photos.google.com/share/AF1QipOB0DQdztKPMNtVvbVF3GTkQpdyC_ovuMHwg1P6-twVFTyhYErzE71chyVpjgQLeQ?pli=1&key=Y0RZTzZuN0c0TDBIX1pRUFpLeXhCYktzajBUZGV3"><i class="material-icons">camera_alt</i>  Convocation 12</a></li>
               <li><a href="https://photos.google.com/share/AF1QipOxGlZO38r_yeXepQZyefgg7qJ2k0SrgdX_hIfmkJgPMVJ1Ek3QPBOKljQypuhyNA?key=X1UzSWJ3dXB4X2lDQW9QTFRGMDN2bnFrUDZISFdR"><i class="material-icons">camera_alt</i>  Convocation 11</a></li>
               <li><a href="https://www.youtube.com/watch?v=DYxSAov-Kfs"><i class="material-icons">camera_alt</i> Convocation 10</a></li>
               <li><a href="https://www.youtube.com/watch?v=EPv_dEhAKqA&t=1s"><i class="material-icons">camera_alt</i> Convocation 9</a></li>
-=======
-              <li><a href="#">> Convocation 13</a></li>
-              <li>
-                <a
-                  href="https://photos.google.com/share/AF1QipOB0DQdztKPMNtVvbVF3GTkQpdyC_ovuMHwg1P6-twVFTyhYErzE71chyVpjgQLeQ?pli=1&key=Y0RZTzZuN0c0TDBIX1pRUFpLeXhCYktzajBUZGV3"
-                  >> Convocation 12</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://photos.google.com/share/AF1QipOxGlZO38r_yeXepQZyefgg7qJ2k0SrgdX_hIfmkJgPMVJ1Ek3QPBOKljQypuhyNA?key=X1UzSWJ3dXB4X2lDQW9QTFRGMDN2bnFrUDZISFdR"
-                  >> Convocation 11</a
-                >
-              </li>
-              <li>
-                <a href="https://www.youtube.com/watch?v=DYxSAov-Kfs"
-                  >> Convocation 10</a
-                >
-              </li>
-              <li>
-                <a href="https://www.youtube.com/watch?v=EPv_dEhAKqA&t=1s"
-                  >> Convocation 9</a
-                >
-              </li>
->>>>>>> 98e5bcc487e411b80a2d7523c21488df4314b1e8
             </ul>
           </div>
         </div>
@@ -318,16 +266,8 @@
           <span>All Rights Reserved.</span>
         </p>
       </div>
-<<<<<<< HEAD
 
       <img src="assets/img/building2.png" alt="Building" class="footer-building" />
-=======
-      <img
-        src="assets/img/building2.png"
-        alt="Building"
-        class="footer-building"
-      />
->>>>>>> 98e5bcc487e411b80a2d7523c21488df4314b1e8
     </footer>
   </body>
 </html>

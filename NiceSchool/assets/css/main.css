@@ -218,13 +218,8 @@ h6 {
 
 /* Navbar */
 .header {
-<<<<<<< HEAD
   background-color :#393b76; /* deep blue */
   border-bottom: 2px solid #d4af37; /* gold line under navbar */
-=======
-  background-color: #393b76; /* deep blue */
-  border-bottom: 2px solid #43d1f1; /* gold line under navbar */
->>>>>>> 98e5bcc487e411b80a2d7523c21488df4314b1e8
 }
 
 .header .logo h1 {
@@ -632,7 +627,7 @@ h6 {
 }
 
 .footer h4 {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
   position: relative;
   padding-bottom: 12px;
@@ -693,6 +688,28 @@ h6 {
 .footer .credits {
   margin-top: 8px;
   font-size: 13px;
+}
+/* Footer links adjustments */
+.footer-links {
+  padding-left: 0;          /* remove extra padding from columns */
+}
+
+/* Reduce gap between Web Archives and Gallery Archives */
+
+
+/* Optional: shift Gallery Archives slightly left */
+.footer .footer-links:nth-child(3) {
+  margin-left: -10px;       /* adjust value as per requirement */
+}
+
+/* Optional: reduce margin between heading and list */
+.footer-links h4 {
+  margin-bottom: 0.8rem;    /* less space between title and list */
+}
+
+/* Optional: reduce spacing between list items */
+.footer-links ul li {
+  margin-bottom: 0.3rem;    /* closer list items */
 }
 
 /*--------------------------------------------------------------
@@ -1704,17 +1721,10 @@ section,
 --------------------------------------------------------------*/
 .testimonials {
   padding-top: 60px;
-<<<<<<< HEAD
   padding-bottom: 60px;
   position: relative; /* needed for background layering */
   background: url("assets/img/mandalaback.png") center center/cover no-repeat;
   /* If you want the image to repeat instead of cover, use: repeat */
-=======
-  padding-bottom: 60px; /* ✅ Background image */
-  background: url("../img/your-background.png") no-repeat center center fixed;
-  background-size: cover;
-  background-attachment: fixed; /* keeps it in place while scrolling */
->>>>>>> 98e5bcc487e411b80a2d7523c21488df4314b1e8
 }
 
 
@@ -3769,12 +3779,6 @@ section,
   }
 }
 
-<<<<<<< Updated upstream
-/*--------------------------------------------------------------
-# Students Life Section
---------------------------------------------------------------*/
-=======
->>>>>>> Stashed changes
 
 /*--------------------------------------------------------------
 # Faculty  Staff Section
