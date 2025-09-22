@@ -218,7 +218,7 @@ h6 {
 
 /* Navbar */
 .header {
-  background-color :#393b76; /* deep blue */
+  background-color: #393b76; /* deep blue */
   border-bottom: 2px solid #43d1f1; /* gold line under navbar */
 }
 
@@ -570,15 +570,15 @@ h6 {
   background-color: var(--background-color);
   font-size: 14px;
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
 }
 .footer-building {
   position: absolute;
   bottom: 0;
   right: 0;
-  max-width: 400px;  /* adjust size as needed */
+  max-width: 400px; /* adjust size as needed */
   height: auto;
-  opacity: 0.9;      /* optional, for a softer effect */
+  opacity: 0.9; /* optional, for a softer effect */
   pointer-events: none; /* so it doesn’t block clicks on footer links */
 }
 .footer .footer-top {
@@ -1377,6 +1377,7 @@ section,
 .about .mission-vision-row {
   margin-top: 2rem;
 }
+/* ------------------------------------------------------------------------------- */
 
 /* -----------------------Elegant Flip Card v2----------------------- */
 .flip-card-front .card-icon {
@@ -6883,6 +6884,14 @@ section,
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
+.notable-alumni h2 {
+  color: #f0ad4e; /* or any yellow shade */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.notable-alumni h4 {
+  font-weight: 540;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
 
 .alumni .alumni-engagement {
   padding: 4rem 0;
@@ -8520,9 +8529,9 @@ section,
 #dress-code {
   background: radial-gradient(
     circle at center,
-    rgba(38, 38, 92, 0.9) 0%,
-    rgba(88, 45, 124, 0.8) 60%,
-    rgba(71, 108, 176, 0.8) 100%
+    rgba(38, 38, 92, 0.7) 0%,
+    rgba(88, 45, 124, 0.6) 60%,
+    rgba(71, 108, 176, 0.6) 100%
   );
   position: relative;
   overflow: hidden;
