@@ -10,6 +10,11 @@
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon" />
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
@@ -46,6 +51,27 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
   </head>
+
+  <script>
+  // Get current page filename (e.g., index.html, stories.html)
+  const currentPage = window.location.pathname.split("Guidelines.html").pop();
+
+  // Select all navbar links
+  const navLinks = document.querySelectorAll("#navmenu a");
+
+  navLinks.forEach(link => {
+    // Compare href of link with current page
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+    }
+
+    // Special case: if you are on home page (index.html or just '/')
+    if ((currentPage === "" || currentPage === "Guidelines.html") && link.getAttribute("href") === "Guidelines.html") {
+      link.classList.add("active");
+    }
+  });
+</script>
+
 
   <body class="news-page">
     <header id="header" class="header d-flex align-items-center fixed-top">
@@ -132,64 +158,26 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-3 footer-links">
+                    <div class="col-lg-4 col-md-3 footer-links">
             <h4>Web Archives</h4>
 
             <ul>
-              <li>
-                <a href="https://www.iiitd.ac.in/convocation2024/"
-                  >> Convocation 13</a
-                >
-              </li>
-              <li>
-                <a href="https://www.iiitd.ac.in/convocation2023/"
-                  >> Convocation 12</a
-                >
-              </li>
-              <li>
-                <a href="https://www.iiitd.ac.in/convocation22/"
-                  >> Convocation 11</a
-                >
-              </li>
-              <li>
-                <a href="https://www.iiitd.ac.in/convocation21/"
-                  >> Convocation 10</a
-                >
-              </li>
-              <li>
-                <a href="https://www.iiitd.ac.in/convocation20/"
-                  >> Convocation 9</a
-                >
-              </li>
+              <li><a href="https://www.iiitd.ac.in/convocation2024/"><i class="fas fa-bookmark"></i>   Convocation 13</a></li>
+              <li><a href="https://www.iiitd.ac.in/convocation2023/"><i class="fas fa-bookmark"></i>   Convocation 12</a></li>
+              <li><a href="https://www.iiitd.ac.in/convocation22/"><i class="fas fa-bookmark"></i>   Convocation 11</a></li>
+              <li><a href="https://www.iiitd.ac.in/convocation21/"><i class="fas fa-bookmark"></i>   Convocation 10</a></li>
+              <li><a href="https://www.iiitd.ac.in/convocation20/"><i class="fas fa-bookmark"></i>   Convocation 9</a></li>
             </ul>
           </div>
 
           <div class="col-lg-4 col-md-3 footer-links">
             <h4>Gallery Archives</h4>
             <ul>
-              <li><a href="#">> Convocation 13</a></li>
-              <li>
-                <a
-                  href="https://photos.google.com/share/AF1QipOB0DQdztKPMNtVvbVF3GTkQpdyC_ovuMHwg1P6-twVFTyhYErzE71chyVpjgQLeQ?pli=1&key=Y0RZTzZuN0c0TDBIX1pRUFpLeXhCYktzajBUZGV3"
-                  >> Convocation 12</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://photos.google.com/share/AF1QipOxGlZO38r_yeXepQZyefgg7qJ2k0SrgdX_hIfmkJgPMVJ1Ek3QPBOKljQypuhyNA?key=X1UzSWJ3dXB4X2lDQW9QTFRGMDN2bnFrUDZISFdR"
-                  >> Convocation 11</a
-                >
-              </li>
-              <li>
-                <a href="https://www.youtube.com/watch?v=DYxSAov-Kfs"
-                  >> Convocation 10</a
-                >
-              </li>
-              <li>
-                <a href="https://www.youtube.com/watch?v=EPv_dEhAKqA&t=1s"
-                  >> Convocation 9</a
-                >
-              </li>
+              <li><a href="#"><i class="material-icons">camera_alt</i>  Convocation 13</a></li>
+              <li><a href="https://photos.google.com/share/AF1QipOB0DQdztKPMNtVvbVF3GTkQpdyC_ovuMHwg1P6-twVFTyhYErzE71chyVpjgQLeQ?pli=1&key=Y0RZTzZuN0c0TDBIX1pRUFpLeXhCYktzajBUZGV3"><i class="material-icons">camera_alt</i>  Convocation 12</a></li>
+              <li><a href="https://photos.google.com/share/AF1QipOxGlZO38r_yeXepQZyefgg7qJ2k0SrgdX_hIfmkJgPMVJ1Ek3QPBOKljQypuhyNA?key=X1UzSWJ3dXB4X2lDQW9QTFRGMDN2bnFrUDZISFdR"><i class="material-icons">camera_alt</i>  Convocation 11</a></li>
+              <li><a href="https://www.youtube.com/watch?v=DYxSAov-Kfs"><i class="material-icons">camera_alt</i> Convocation 10</a></li>
+              <li><a href="https://www.youtube.com/watch?v=EPv_dEhAKqA&t=1s"><i class="material-icons">camera_alt</i> Convocation 9</a></li>
             </ul>
           </div>
         </div>
@@ -202,6 +190,8 @@
           <span>All Rights Reserved.</span>
         </p>
       </div>
+
+      <img src="assets/img/building2.png" alt="Building" class="footer-building" />
     </footer>
     <!-- ----------------------------------------footer--------------------------------------------------- -->
     <!-- Scroll Top -->

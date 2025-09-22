@@ -16,6 +16,7 @@
     />
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+
 <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -116,6 +117,27 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
       </head>
+
+      <script>
+  // Get current page filename (e.g., index.html, stories.html)
+  const currentPage = window.location.pathname.split("/").pop();
+
+  // Select all navbar links
+  const navLinks = document.querySelectorAll("#navmenu a");
+
+  navLinks.forEach(link => {
+    // Compare href of link with current page
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+    }
+
+    // Special case: if you are on home page (index.html or just '/')
+    if ((currentPage === "" || currentPage === "index.html") && link.getAttribute("href") === "index.html") {
+      link.classList.add("active");
+    }
+  });
+</script>
+
 
 <body class="index-page">
 
@@ -281,7 +303,7 @@
                   </div>
                 </div>
                 <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
-                  <div class="image-stack" style="margin-top: 40px; margin-left:40px;"  >
+                  <div class="image-stack" style="margin-top: 40px; margin-right: 40px;"  >
                     <div
                       class="image-stack-item image-stack-item-top"
                       data-aos="zoom-in"
@@ -312,8 +334,8 @@
                 </div>
               </div>
 
-              <div class="row mission-vision-row g-4">
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="row mission-vision-row g-4 ">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200" >
   <div class="flip-card">
     <div class="flip-card-inner">
       <!-- Front Side -->
