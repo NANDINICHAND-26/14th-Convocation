@@ -118,26 +118,7 @@
   ======================================================== -->
       </head>
 
-      <script>
-  // Get current page filename (e.g., index.html, stories.html)
-  const currentPage = window.location.pathname.split("/").pop();
-
-  // Select all navbar links
-  const navLinks = document.querySelectorAll("#navmenu a");
-
-  navLinks.forEach(link => {
-    // Compare href of link with current page
-    if (link.getAttribute("href") === currentPage) {
-      link.classList.add("active");
-    }
-
-    // Special case: if you are on home page (index.html or just '/')
-    if ((currentPage === "" || currentPage === "index.html") && link.getAttribute("href") === "index.html") {
-      link.classList.add("active");
-    }
-  });
-</script>
-
+ 
 
 <body class="index-page">
 
@@ -1054,25 +1035,6 @@
 
         <!-- Main JS File -->
         <script src="assets/js/main.js"></script>
-        <script>
-  document.addEventListener("DOMContentLoaded", function () {
-  let links = document.querySelectorAll("#navmenu a");
-  let currentPage = window.location.pathname.split("/").pop().toLowerCase(); // convert to lowercase
-
-  links.forEach(link => {
-    let linkHref = link.getAttribute("href").toLowerCase(); // lowercase for comparison
-
-    // Skip links that are only hashes (#)
-    if(linkHref.startsWith("#")) return;
-
-    if (linkHref === currentPage) {
-      link.classList.add("active");
-    } else {
-      link.classList.remove("active");
-    }
-  });
-});
-</script>
 
       </body>
     </html>

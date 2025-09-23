@@ -36,6 +36,30 @@
     mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
   }
 
+document.addEventListener("DOMContentLoaded", function () {
+  let links = document.querySelectorAll("#navmenu a");
+  let currentPage = window.location.pathname.split("/").pop().toLowerCase(); 
+
+  links.forEach(link => {
+    let linkHref = link.getAttribute("href").toLowerCase();
+
+    // Agar sirf "#" hai to skip karo
+    if (linkHref.startsWith("#")) return;
+
+    // Agar current page match kare
+    if (linkHref === currentPage) {
+      link.classList.add("active");
+    } 
+    // Agar "index.html" ho aur page root ho (jaise localhost/ ya domain/)
+    else if ((linkHref === "index.html" || linkHref === "./") && currentPage === "") {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
+});
+
+
   /**
    * Hide mobile nav on same-page/hash links
    */
