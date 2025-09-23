@@ -73,14 +73,18 @@ body {
 }
 
 * {
-  cursor: url("../img/cursor.png"), auto;
+  cursor: url("../img/cursor1.png"), auto;
 }
 
 a {
   color: var(--accent-color);
   text-decoration: none;
   transition: 0.3s;
+<<<<<<< Updated upstream
   cursor: url("assets/img/cursor.png"), pointer;
+=======
+>>>>>>> Stashed changes
+   cursor: url("../img/cursor1.png"), pointer
 }
 
 a:hover {
