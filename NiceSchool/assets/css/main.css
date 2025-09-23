@@ -224,7 +224,7 @@ h6 {
 
 /* Navbar */
 .header {
-  background-color :#393b76; /* deep blue */
+  background-color: #393b76; /* deep blue */
   border-bottom: 2px solid #d4af37; /* gold line under navbar */
 }
 
@@ -479,9 +479,9 @@ h6 {
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-dropdown-hover-color);
-     color: #d4af37; /* highlight color */
-  font-weight: bold; 
-  border-bottom: 2px solid #d4af37; /* underline effect */
+    color: #d4af37; /* highlight color */
+    font-weight: bold;
+    border-bottom: 2px solid #d4af37; /* underline effect */
   }
 
   .navmenu .active i,
@@ -697,25 +697,24 @@ h6 {
 }
 /* Footer links adjustments */
 .footer-links {
-  padding-left: 0;          /* remove extra padding from columns */
+  padding-left: 0; /* remove extra padding from columns */
 }
 
 /* Reduce gap between Web Archives and Gallery Archives */
 
-
 /* Optional: shift Gallery Archives slightly left */
 .footer .footer-links:nth-child(3) {
-  margin-left: -10px;       /* adjust value as per requirement */
+  margin-left: -10px; /* adjust value as per requirement */
 }
 
 /* Optional: reduce margin between heading and list */
 .footer-links h4 {
-  margin-bottom: 0.8rem;    /* less space between title and list */
+  margin-bottom: 0.8rem; /* less space between title and list */
 }
 
 /* Optional: reduce spacing between list items */
 .footer-links ul li {
-  margin-bottom: 0.3rem;    /* closer list items */
+  margin-bottom: 0.3rem; /* closer list items */
 }
 
 /*--------------------------------------------------------------
@@ -1286,7 +1285,6 @@ section,
     /* right design */ #26265cff;
 
   background-size: 200px 100%, 200px 100%; /* width fixed, height full */
-  
 }
 
 .about .display-6 span {
@@ -1402,7 +1400,7 @@ section,
 
 .about .mission-vision-row {
   margin-top: 2rem;
-   margin-right: 60px;
+  margin-right: 60px;
 }
 /* ------------------------------------------------------------------------------- */
 
@@ -1733,7 +1731,6 @@ section,
   /* If you want the image to repeat instead of cover, use: repeat */
 }
 
-
 .testimonials .testimonial-masonry {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1744,11 +1741,11 @@ section,
 .testimonials .testimonial-masonry::before {
   content: "";
   position: absolute;
-  top: 0; 
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
- 
+
   z-index: -1;
 }
 #testimonials .section-title {
@@ -1961,6 +1958,16 @@ section,
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
+.stats {
+  /* Multiple background layers */
+  background: url("../img/leftsidedesign-removebg-preview.png") left center
+      no-repeat,
+    /* left design */ url("../img/leftsidedesign-removebg-preview-RIGHT.png")
+      right center no-repeat,
+    /* right design */ #26265cff;
+
+  background-size: 200px 100%, 200px 100%; /* width fixed, height full */
+}
 .stats .stats-overview {
   height: 100%;
   display: flex;
@@ -3784,7 +3791,6 @@ section,
     grid-template-columns: 1fr;
   }
 }
-
 
 /*--------------------------------------------------------------
 # Faculty  Staff Section
@@ -5915,7 +5921,6 @@ section,
   color: var(--contrast-color);
   transform: translateY(-2px);
 }
-
 
 /*--------------------------------------------------------------
 # Events 2 Section
