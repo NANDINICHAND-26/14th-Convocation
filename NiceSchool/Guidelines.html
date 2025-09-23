@@ -10,11 +10,14 @@
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon" />
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-/>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
@@ -53,25 +56,27 @@
   </head>
 
   <script>
-  // Get current page filename (e.g., index.html, stories.html)
-  const currentPage = window.location.pathname.split("Guidelines.html").pop();
+    // Get current page filename (e.g., index.html, stories.html)
+    const currentPage = window.location.pathname.split("Guidelines.html").pop();
 
-  // Select all navbar links
-  const navLinks = document.querySelectorAll("#navmenu a");
+    // Select all navbar links
+    const navLinks = document.querySelectorAll("#navmenu a");
 
-  navLinks.forEach(link => {
-    // Compare href of link with current page
-    if (link.getAttribute("href") === currentPage) {
-      link.classList.add("active");
-    }
+    navLinks.forEach((link) => {
+      // Compare href of link with current page
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+      }
 
-    // Special case: if you are on home page (index.html or just '/')
-    if ((currentPage === "" || currentPage === "Guidelines.html") && link.getAttribute("href") === "Guidelines.html") {
-      link.classList.add("active");
-    }
-  });
-</script>
-
+      // Special case: if you are on home page (index.html or just '/')
+      if (
+        (currentPage === "" || currentPage === "Guidelines.html") &&
+        link.getAttribute("href") === "Guidelines.html"
+      ) {
+        link.classList.add("active");
+      }
+    });
+  </script>
 
   <body class="news-page">
     <header id="header" class="header d-flex align-items-center fixed-top">
@@ -107,41 +112,46 @@
       </div>
     </header>
 
-   <main class="main">
-  <!-- Page Title -->
-  <div class="page-title mandala-bg">
-    <div class="container position-relative text-center">
-      <h1>Guidelines</h1>
-      <p>FOR REHEARSAL AND MAIN CONVOCATION CEREMONY</p>
-    </div>
-  </div>
-  <!-- End Page Title -->
-
-  <!-- Guidelines Section -->
-  <section id="guidelines" class="guidelines section py-5 elegant-section">
-    <div class="container" data-aos="fade-up">
-      <div class="text-center mt-4">
-        <a
-          href="assets/guidelines.pdf"
-          class="btn btn-gradient btn-lg fw-bold px-5 py-3 shadow-lg"
-        >
-          Click Here for Detailed Guidelines
-        </a>
+    <main class="main">
+      <!-- Page Title -->
+      <div class="page-title mandala-bg">
+        <div class="container position-relative text-center">
+          <h1>Guidelines</h1>
+          <p>FOR REHEARSAL AND MAIN CONVOCATION CEREMONY</p>
+        </div>
       </div>
-    </div>
-  </section>
-  <!-- /Guidelines Section -->
-</main>
+      <!-- End Page Title -->
 
-         <!-- Footer -->
+      <!-- Guidelines Section -->
+      <section id="guidelines" class="guidelines section py-5 elegant-section">
+        <div class="container" data-aos="fade-up">
+          <div class="text-center mt-4">
+            <a
+              href="assets/guidelines.pdf"
+              class="btn btn-gradient btn-lg fw-bold px-5 py-3 shadow-lg"
+            >
+              Click Here for Detailed Guidelines
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- /Guidelines Section -->
+    </main>
+
+    <!-- Footer -->
+    <!-- Footer -->
     <footer id="footer" class="footer position-relative dark-background">
       <div class="container footer-top">
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 footer-about">
             <a href="index.html" class="logo d-flex align-items-center">
-              <span class="sitename" style="color: #d4af37; font-weight: 600; margin-bottom: 0.8rem;">Contact Info</span>
+              <span
+                class="sitename"
+                style="color: #d4af37; font-weight: 600; margin-bottom: 0.8rem"
+                >Contact Info</span
+              >
             </a>
-            <div class="footer-contact pt-3" >
+            <div class="footer-contact pt-3">
               <h5>IIIT-Delhi</h5>
               <p>Okhla phase III, New Delhi, India</p>
 
@@ -160,25 +170,71 @@
           </div>
 
           <div class="col-lg-4 col-md-3 footer-links">
-            <h4 style="color: #d4af37; font-weight: 600; margin-bottom: 0.8rem;">Web Archives </h4>
+            <h4 style="color: #d4af37; font-weight: 600; margin-bottom: 0.8rem">
+              Web Archives
+            </h4>
 
             <ul>
-              <li><a href="https://www.iiitd.ac.in/convocation2024/"><i class="fas fa-bookmark"></i>   Convocation 13</a></li>
-              <li><a href="https://www.iiitd.ac.in/convocation2023/"><i class="fas fa-bookmark"></i>   Convocation 12</a></li>
-              <li><a href="https://www.iiitd.ac.in/convocation22/"><i class="fas fa-bookmark"></i>   Convocation 11</a></li>
-              <li><a href="https://www.iiitd.ac.in/convocation21/"><i class="fas fa-bookmark"></i>   Convocation 10</a></li>
-              <li><a href="https://www.iiitd.ac.in/convocation20/"><i class="fas fa-bookmark"></i>   Convocation 9</a></li>
+              <li>
+                <a href="https://www.iiitd.ac.in/convocation2024/"
+                  ><i class="fas fa-bookmark"></i> Convocation 13</a
+                >
+              </li>
+              <li>
+                <a href="https://www.iiitd.ac.in/convocation2023/"
+                  ><i class="fas fa-bookmark"></i> Convocation 12</a
+                >
+              </li>
+              <li>
+                <a href="https://www.iiitd.ac.in/convocation22/"
+                  ><i class="fas fa-bookmark"></i> Convocation 11</a
+                >
+              </li>
+              <li>
+                <a href="https://www.iiitd.ac.in/convocation21/"
+                  ><i class="fas fa-bookmark"></i> Convocation 10</a
+                >
+              </li>
+              <li>
+                <a href="https://www.iiitd.ac.in/convocation20/"
+                  ><i class="fas fa-bookmark"></i> Convocation 9</a
+                >
+              </li>
             </ul>
           </div>
 
           <div class="col-lg-4 col-md-3 footer-links">
-            <h4 style="color: #d4af37; font-weight: 600; margin-bottom: 0.8rem;">Gallery Archives</h4>
+            <h4 style="color: #d4af37; font-weight: 600; margin-bottom: 0.8rem">
+              Gallery Archives
+            </h4>
             <ul>
-              <li><a href="#"><i class="material-icons">camera_alt</i>  Convocation 13</a></li>
-              <li><a href="https://photos.google.com/share/AF1QipOB0DQdztKPMNtVvbVF3GTkQpdyC_ovuMHwg1P6-twVFTyhYErzE71chyVpjgQLeQ?pli=1&key=Y0RZTzZuN0c0TDBIX1pRUFpLeXhCYktzajBUZGV3"><i class="material-icons">camera_alt</i>  Convocation 12</a></li>
-              <li><a href="https://photos.google.com/share/AF1QipOxGlZO38r_yeXepQZyefgg7qJ2k0SrgdX_hIfmkJgPMVJ1Ek3QPBOKljQypuhyNA?key=X1UzSWJ3dXB4X2lDQW9QTFRGMDN2bnFrUDZISFdR"><i class="material-icons">camera_alt</i>  Convocation 11</a></li>
-              <li><a href="https://www.youtube.com/watch?v=DYxSAov-Kfs"><i class="material-icons">camera_alt</i> Convocation 10</a></li>
-              <li><a href="https://www.youtube.com/watch?v=EPv_dEhAKqA&t=1s"><i class="material-icons">camera_alt</i> Convocation 9</a></li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-camera"></i> Convocation 13</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://photos.google.com/share/AF1QipOB0DQdztKPMNtVvbVF3GTkQpdyC_ovuMHwg1P6-twVFTyhYErzE71chyVpjgQLeQ?pli=1&key=Y0RZTzZuN0c0TDBIX1pRUFpLeXhCYktzajBUZGV3"
+                  ><i class="fa-solid fa-camera"></i> Convocation 12</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://photos.google.com/share/AF1QipOxGlZO38r_yeXepQZyefgg7qJ2k0SrgdX_hIfmkJgPMVJ1Ek3QPBOKljQypuhyNA?key=X1UzSWJ3dXB4X2lDQW9QTFRGMDN2bnFrUDZISFdR"
+                  ><i class="fa-solid fa-camera"></i> Convocation 11</a
+                >
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=DYxSAov-Kfs"
+                  ><i class="fa-solid fa-camera"></i>Convocation 10</a
+                >
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=EPv_dEhAKqA&t=1s"
+                  ><i class="fa-solid fa-camera"></i> Convocation 9</a
+                >
+              </li>
             </ul>
           </div>
         </div>
@@ -192,7 +248,11 @@
         </p>
       </div>
 
-      <img src="assets/img/building2.png" alt="Building" class="footer-building" />
+      <img
+        src="assets/img/building2.png"
+        alt="Building"
+        class="footer-building"
+      />
     </footer>
     <!-- ----------------------------------------footer--------------------------------------------------- -->
     <!-- Scroll Top -->

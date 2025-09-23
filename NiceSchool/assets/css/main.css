@@ -69,7 +69,7 @@ body {
   background: url("../img/mandalaback.png");
   background-position: center top; /* center horizontally, top vertically */
   font-family: var(--default-font);
-   /* cursor: url("../img/cursor.png"), auto; */
+  /* cursor: url("../img/cursor.png"), auto; */
 }
 
 * {
@@ -80,7 +80,7 @@ a {
   color: var(--accent-color);
   text-decoration: none;
   transition: 0.3s;
-   cursor: url("assets/img/cursor.png"), pointer
+  cursor: url("assets/img/cursor.png"), pointer;
 }
 
 a:hover {
@@ -2172,6 +2172,7 @@ section,
 # Schedule Table 
 
 --------------------------------------------------------------*/
+
 /* Make the table more modern */
 .table {
   border-radius: 8px;
@@ -8776,29 +8777,29 @@ section,
   text-align: center;
 }
 
-      /* Heading Styling */
-      #convo-song h1 {
-        font-size: 3rem;
-        font-weight: 800;
-        margin-bottom: 40px;
-        background: linear-gradient(45deg, #d4af37, #fceabb);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
-      }
+/* Heading Styling */
+#convo-song h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 40px;
+  background: linear-gradient(45deg, #d4af37, #fceabb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
 
 /* Song Card */
 .song-card {
-  max-width: 500px;                  /* broader card */
+  max-width: 500px; /* broader card */
   background: linear-gradient(160deg, #242555, #582d7c);
   color: #fff;
   border-radius: 1.5rem;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45);
-  padding: 2rem 2.5rem;             /* compact padding */
+  padding: 2rem 2.5rem; /* compact padding */
   text-align: center;
   border: 2px solid #d4af37;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin: 0 auto;                    /* card itself center */
+  margin: 0 auto; /* card itself center */
 }
 
 .song-card:hover {
@@ -8818,49 +8819,46 @@ section,
 /* Image */
 .song-card img {
   max-width: 400px;
-  display: block;                    /* block to use auto margin */
-  margin: 0 auto 1.5rem;            /* center horizontally */
+  display: block; /* block to use auto margin */
+  margin: 0 auto 1.5rem; /* center horizontally */
   border: 4px solid #964894;
   padding: 6px;
   background: #26265c;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
 
+  border: 4px solid #964894;
+  padding: 6px;
+  background: #26265c;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+}
 
-        border: 4px solid #964894;
-        padding: 6px;
-        background: #26265c;
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
-      }
-
-      /* Gold heading inside card */
-      .song-card h5 {
-        font-size: 1.6rem;
-        margin-top: 1rem;
-        background: linear-gradient(45deg, #d4af37, #f9e79f);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
+/* Gold heading inside card */
+.song-card h5 {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  background: linear-gradient(45deg, #d4af37, #f9e79f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 /* Audio Player */
 .song-card audio {
   margin-top: 1.5rem;
   width: 100%;
-  height: 50px;                /* taller play bar */
-  border-radius: 0;            /* no border radius */
+  height: 50px; /* taller play bar */
+  border-radius: 0; /* no border radius */
   outline: none;
   background: #242555;
 }
 
-
-
-      /* Audio Player */
-      .song-card audio {
-        margin-top: 1.5rem;
-        width: 100%;
-        height: 50px; /* taller play bar */
-        border-radius: 0; /* no border radius */
-        outline: none;
-        background: #242555;
-      }
+/* Audio Player */
+.song-card audio {
+  margin-top: 1.5rem;
+  width: 100%;
+  height: 50px; /* taller play bar */
+  border-radius: 0; /* no border radius */
+  outline: none;
+  background: #242555;
+}
 
 /* -------------------------------------Convo Song-----------------------------------------------       */
