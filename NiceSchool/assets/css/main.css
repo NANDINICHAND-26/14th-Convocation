@@ -80,10 +80,7 @@ a {
   color: var(--accent-color);
   text-decoration: none;
   transition: 0.3s;
-<<<<<<< Updated upstream
-  cursor: url("assets/img/cursor.png"), pointer;
-=======
->>>>>>> Stashed changes
+  
    cursor: url("../img/cursor1.png"), pointer
 }
 
@@ -1406,6 +1403,28 @@ section,
   margin-top: 2rem;
   margin-right: 60px;
 }
+
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+  padding: 60px 0;
+}
+
+#about .container {
+  max-width: 1200px; /* Center content in large screens */
+  margin: 0 auto;
+}
+
+.speaker-card {
+  text-align: center;
+}
+
+.flip-card {
+  margin: auto;
+}
+
 /* ------------------------------------------------------------------------------- */
 
 /* -----------------------Elegant Flip Card v2----------------------- */
